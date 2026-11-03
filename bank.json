@@ -44,25 +44,6 @@
     "correct": "5"
   },
   {
-    "id": "p-037dfcc34af9",
-    "family": "f-38a2ebab1ab0",
-    "kind": "q2",
-    "subject": "ode",
-    "prompt": "Give the Taylor polynomial through degree $3$ for $u''+2xu'+u=0$, $u(0)=2$, $u'(0)=1$.",
-    "explanation": "At $x=0$, the equation gives $u''(0)=-u(0)=-2$. Differentiating the equation gives $u^{(3)}+2xu''+3u'=0$. At $0$, this gives $u^{(3)}(0)=-3$. Substitute these values in $P_3(x)=u(0)+u'(0)x+\\frac{u''(0)}{2}x^2+\\frac{u^{(3)}(0)}{6}x^3$. Thus $P_3(x)=2 + x - x^{2} - \\frac{x^{3}}{2}$.",
-    "variables": [
-      "x"
-    ],
-    "labels": [],
-    "unordered": false,
-    "answers": [
-      {
-        "expression": "-x^3/2 - x^2 + x + 2",
-        "latex": "2 + x - x^{2} - \\frac{x^{3}}{2}"
-      }
-    ]
-  },
-  {
     "id": "p-03d3670e6e52",
     "family": "f-095b9f9a8f60",
     "kind": "q1",
@@ -2231,25 +2212,6 @@
     ]
   },
   {
-    "id": "p-89f9dd228eae",
-    "family": "f-38a2ebab1ab0",
-    "kind": "q2",
-    "subject": "ode",
-    "prompt": "Give the Taylor polynomial through degree $3$ for $u''+xu'+u=0$, $u(0)=3$, $u'(0)=2$.",
-    "explanation": "At $x=0$, the equation gives $u''(0)=-u(0)=-3$. Differentiating the equation gives $u^{(3)}+xu''+2u'=0$. At $0$, this gives $u^{(3)}(0)=-4$. Substitute these values in $P_3(x)=u(0)+u'(0)x+\\frac{u''(0)}{2}x^2+\\frac{u^{(3)}(0)}{6}x^3$. Thus $P_3(x)=3 + 2 x - \\frac{3 x^{2}}{2} - \\frac{2 x^{3}}{3}$.",
-    "variables": [
-      "x"
-    ],
-    "labels": [],
-    "unordered": false,
-    "answers": [
-      {
-        "expression": "-2*x^3/3 - 3*x^2/2 + 2*x + 3",
-        "latex": "3 + 2 x - \\frac{3 x^{2}}{2} - \\frac{2 x^{3}}{3}"
-      }
-    ]
-  },
-  {
     "id": "p-8b3e2e735cf1",
     "family": "f-9fc320e10b31",
     "kind": "q2",
@@ -2316,25 +2278,6 @@
       "$0$"
     ],
     "correct": "$- \\frac{\\pi}{2}$"
-  },
-  {
-    "id": "p-8d2c9497b830",
-    "family": "f-38a2ebab1ab0",
-    "kind": "q2",
-    "subject": "ode",
-    "prompt": "Give the Taylor polynomial through degree $3$ for $u''+3xu'+u=0$, $u(0)=1$, $u'(0)=1$.",
-    "explanation": "At $x=0$, the equation gives $u''(0)=-u(0)=-1$. Differentiating the equation gives $u^{(3)}+3xu''+4u'=0$. At $0$, this gives $u^{(3)}(0)=-4$. Substitute these values in $P_3(x)=u(0)+u'(0)x+\\frac{u''(0)}{2}x^2+\\frac{u^{(3)}(0)}{6}x^3$. Thus $P_3(x)=1 + x - \\frac{x^{2}}{2} - \\frac{2 x^{3}}{3}$.",
-    "variables": [
-      "x"
-    ],
-    "labels": [],
-    "unordered": false,
-    "answers": [
-      {
-        "expression": "-2*x^3/3 - x^2/2 + x + 1",
-        "latex": "1 + x - \\frac{x^{2}}{2} - \\frac{2 x^{3}}{3}"
-      }
-    ]
   },
   {
     "id": "p-8d7adf418451",
@@ -3207,25 +3150,6 @@
     "correct": "$\\frac{s}{s^{2} + 4}$"
   },
   {
-    "id": "p-c8b67e6d0fa9",
-    "family": "f-38a2ebab1ab0",
-    "kind": "q2",
-    "subject": "ode",
-    "prompt": "Give the Taylor polynomial through degree $3$ for $u''+2xu'+u=0$, $u(0)=1$, $u'(0)=-1$.",
-    "explanation": "At $x=0$, the equation gives $u''(0)=-u(0)=-1$. Differentiating the equation gives $u^{(3)}+2xu''+3u'=0$. At $0$, this gives $u^{(3)}(0)=3$. Substitute these values in $P_3(x)=u(0)+u'(0)x+\\frac{u''(0)}{2}x^2+\\frac{u^{(3)}(0)}{6}x^3$. Thus $P_3(x)=1 - x - \\frac{x^{2}}{2} + \\frac{x^{3}}{2}$.",
-    "variables": [
-      "x"
-    ],
-    "labels": [],
-    "unordered": false,
-    "answers": [
-      {
-        "expression": "x^3/2 - x^2/2 - x + 1",
-        "latex": "1 - x - \\frac{x^{2}}{2} + \\frac{x^{3}}{2}"
-      }
-    ]
-  },
-  {
     "id": "p-c9f92c072bf5",
     "family": "f-8c455bb1f684",
     "kind": "q2",
@@ -3604,25 +3528,6 @@
     "correct": "$0$"
   },
   {
-    "id": "p-e49373688a91",
-    "family": "f-38a2ebab1ab0",
-    "kind": "q2",
-    "subject": "ode",
-    "prompt": "Give the Taylor polynomial through degree $3$ for $u''+xu'+u=0$, $u(0)=1$, $u'(0)=2$.",
-    "explanation": "At $x=0$, the equation gives $u''(0)=-u(0)=-1$. Differentiating the equation gives $u^{(3)}+xu''+2u'=0$. At $0$, this gives $u^{(3)}(0)=-4$. Substitute these values in $P_3(x)=u(0)+u'(0)x+\\frac{u''(0)}{2}x^2+\\frac{u^{(3)}(0)}{6}x^3$. Thus $P_3(x)=1 + 2 x - \\frac{x^{2}}{2} - \\frac{2 x^{3}}{3}$.",
-    "variables": [
-      "x"
-    ],
-    "labels": [],
-    "unordered": false,
-    "answers": [
-      {
-        "expression": "-2*x^3/3 - x^2/2 + 2*x + 1",
-        "latex": "1 + 2 x - \\frac{x^{2}}{2} - \\frac{2 x^{3}}{3}"
-      }
-    ]
-  },
-  {
     "id": "p-e4c7d2db0510",
     "family": "f-8c455bb1f684",
     "kind": "q2",
@@ -3672,25 +3577,6 @@
       {
         "expression": "exp(2*t)",
         "latex": "e^{2 t}"
-      }
-    ]
-  },
-  {
-    "id": "p-e6a9f708f7a2",
-    "family": "f-38a2ebab1ab0",
-    "kind": "q2",
-    "subject": "ode",
-    "prompt": "Give the Taylor polynomial through degree $3$ for $u''-xu'+u=0$, $u(0)=2$, $u'(0)=3$.",
-    "explanation": "At $x=0$, the equation gives $u''(0)=-u(0)=-2$. Differentiating the equation gives $u^{(3)}-xu''=0$. At $0$, this gives $u^{(3)}(0)=0$. Substitute these values in $P_3(x)=u(0)+u'(0)x+\\frac{u''(0)}{2}x^2+\\frac{u^{(3)}(0)}{6}x^3$. Thus $P_3(x)=2 + 3 x - x^{2}$.",
-    "variables": [
-      "x"
-    ],
-    "labels": [],
-    "unordered": false,
-    "answers": [
-      {
-        "expression": "-x^2 + 3*x + 2",
-        "latex": "2 + 3 x - x^{2}"
       }
     ]
   },
