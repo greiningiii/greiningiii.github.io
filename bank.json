@@ -2007,6 +2007,21 @@
     ]
   },
   {
+    "id": "p-7b17524698e7",
+    "family": "f-8c57e4e6deac",
+    "kind": "q1",
+    "subject": "ode",
+    "prompt": "For $A=\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}$, $e^{tA}$ equals",
+    "explanation": "Direct multiplication gives $A^2=\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}=0$. Thus every power $A^k$ with $k\\ge2$ is zero. In $e^{tA}=I+tA+\\frac{t^2A^2}{2!}+\\cdots$, only the first two terms remain. Therefore $e^{tA}=I+tA=\\begin{bmatrix}1&2 t\\\\0&1\\end{bmatrix}$.",
+    "options": [
+      "$\\begin{bmatrix}1&2 t\\\\0&1\\end{bmatrix}$",
+      "$\\begin{bmatrix}1&- 2 t\\\\0&1\\end{bmatrix}$",
+      "$\\begin{bmatrix}0&2 t\\\\0&0\\end{bmatrix}$",
+      "$\\begin{bmatrix}1&2 t^{2}\\\\0&1\\end{bmatrix}$"
+    ],
+    "correct": "$\\begin{bmatrix}1&2 t\\\\0&1\\end{bmatrix}$"
+  },
+  {
     "id": "p-7b519d950ef2",
     "family": "f-446b7dd17ed8",
     "kind": "q2",
@@ -2180,6 +2195,21 @@
       "zero"
     ],
     "correct": "positive"
+  },
+  {
+    "id": "p-87b177abc3f9",
+    "family": "f-8c57e4e6deac",
+    "kind": "q1",
+    "subject": "ode",
+    "prompt": "For $A=\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}$, $e^{tA}$ equals",
+    "explanation": "Direct multiplication gives $A^2=\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}=0$. Thus every power $A^k$ with $k\\ge2$ is zero. In $e^{tA}=I+tA+\\frac{t^2A^2}{2!}+\\cdots$, only the first two terms remain. Therefore $e^{tA}=I+tA=\\begin{bmatrix}1 + t&t\\\\- t&1 - t\\end{bmatrix}$.",
+    "options": [
+      "$\\begin{bmatrix}1 + t&t\\\\- t&1 - t\\end{bmatrix}$",
+      "$\\begin{bmatrix}1 - t&- t\\\\t&1 + t\\end{bmatrix}$",
+      "$\\begin{bmatrix}1 + t&- t\\\\t&1 - t\\end{bmatrix}$",
+      "$\\begin{bmatrix}e^{t}&0\\\\0&e^{- t}\\end{bmatrix}$"
+    ],
+    "correct": "$\\begin{bmatrix}1 + t&t\\\\- t&1 - t\\end{bmatrix}$"
   },
   {
     "id": "p-8993322519b7",
