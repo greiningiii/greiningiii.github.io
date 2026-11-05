@@ -18,12 +18,12 @@
     "family": "f-917f7ef1a25f",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The radius of convergence of the Taylor series about $0$ of $\\frac{1}{z - 5}$ is",
+    "prompt": "The radius of convergence of the Taylor series about $0$ of $1/(z - 5)$ is",
     "explanation": "The only singularity is the pole at $z=5$. The Taylor series about $0$ converges up to the nearest singularity, so $R=|5-0|=5$.",
     "options": [
       "$5$",
       "$6$",
-      "$\\frac{5}{2}$",
+      "$5/2$",
       "$\\infty$"
     ],
     "correct": "$5$"
@@ -63,7 +63,7 @@
     "family": "f-917f7ef1a25f",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The radius of convergence of the Taylor series about $0$ of $\\frac{1}{z - 2}$ is",
+    "prompt": "The radius of convergence of the Taylor series about $0$ of $1/(z - 2)$ is",
     "explanation": "The only singularity is the pole at $z=2$. The Taylor series about $0$ converges up to the nearest singularity, so $R=|2-0|=2$.",
     "options": [
       "$2$",
@@ -78,8 +78,8 @@
     "family": "f-582ae2795ce7",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The inverse Laplace transform of $\\frac{2}{s - 5}$ is",
-    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{\\frac{2}{s - 5}\\}(t)=2 e^{5 t}$.",
+    "prompt": "The inverse Laplace transform of $2/(s - 5)$ is",
+    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{2/(s - 5)\\}(t)=2 e^{5 t}$.",
     "options": [
       "$2 e^{5 t}$",
       "$e^{5 t}$",
@@ -110,8 +110,8 @@
     "family": "f-7f83c8c1e1bb",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The singularity at $0$ of $\\frac{\\sin{\\left(z \\right)}}{z}$ is",
-    "explanation": "$\\sin z/z=1-z^2/6+\\cdots$. There are no negative powers, and the limit at $0$ is $1$, so the singularity is removable.",
+    "prompt": "The singularity at $0$ of $\\sin(z)/z$ is",
+    "explanation": "$\\sin(z)/z=1-z^2/6+\\cdots$. There are no negative powers, and the limit at $0$ is $1$, so the singularity is removable.",
     "options": [
       "removable",
       "essential",
@@ -171,14 +171,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $z=1$ of $e^{- z}/(z-1)^3$.",
-    "explanation": "Write $g(z)=e^{- z}$, so $f(z)=g(z)/(z-1)^{3}$. The pole has order 3, and the residue formula gives $\\operatorname{Res}(f,1)=g''(1)/2$. Here $g''(z)=e^{- z}$. Evaluating at $1$ and dividing by $2$ gives $\\frac{1}{2 e}$.",
+    "explanation": "Write $g(z)=e^{- z}$, so $f(z)=g(z)/(z-1)^{3}$. The pole has order 3, and the residue formula gives $\\operatorname{Res}(f,1)=g''(1)/2$. Here $g''(z)=e^{- z}$. Evaluating at $1$ and dividing by $2$ gives $1/(2 e)$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "exp(-1)/2",
-        "latex": "\\frac{1}{2 e}"
+        "latex": "1/(2 e)"
       }
     ]
   },
@@ -188,14 +188,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The residue at $0$ of $e^z/z^{6}$ is",
-    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=5$ contributes $\\frac{1}{120}$ to the coefficient of $z^{-1}$ after division.",
+    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=5$ contributes $1/120$ to the coefficient of $z^{-1}$ after division.",
     "options": [
-      "$\\frac{1}{120}$",
-      "$\\frac{1}{720}$",
-      "$- \\frac{1}{120}$",
+      "$1/120$",
+      "$1/720$",
+      "$-1/120$",
       "$0$"
     ],
-    "correct": "$\\frac{1}{120}$"
+    "correct": "$1/120$"
   },
   {
     "id": "p-0ef2c3dfc040",
@@ -233,7 +233,7 @@
     "family": "f-8c57e4e6deac",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "For $A=\\operatorname{diag}(0,3)$, $e^{tA}$ equals",
+    "prompt": "For $A=\\operatorname{diag}(0,3)$, the matrix exponential $e^{tA}$ equals",
     "explanation": "Every power of a diagonal matrix is diagonal. Applying $e^{tA}=\\sum_{k=0}^{\\infty}t^kA^k/k!$ to the two diagonal entries gives $e^{tA}=\\operatorname{diag}(1,e^{3 t})$.",
     "options": [
       "$\\begin{bmatrix}1&0\\\\0&e^{3 t}\\end{bmatrix}$",
@@ -274,9 +274,9 @@
     "options": [
       "$1$",
       "$-1$",
-      "$-\\frac12$",
+      "$-1/2$",
       "$0$",
-      "$\\frac12$"
+      "$1/2$"
     ],
     "correct": "$1$"
   },
@@ -399,12 +399,12 @@
     "family": "f-917f7ef1a25f",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The radius of convergence of the Taylor series about $0$ of $\\frac{1}{z - 1}$ is",
+    "prompt": "The radius of convergence of the Taylor series about $0$ of $1/(z - 1)$ is",
     "explanation": "The only singularity is the pole at $z=1$. The Taylor series about $0$ converges up to the nearest singularity, so $R=|1-0|=1$.",
     "options": [
       "$1$",
       "$2$",
-      "$\\frac{1}{2}$",
+      "$1/2$",
       "$\\infty$"
     ],
     "correct": "$1$"
@@ -415,7 +415,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find $g(t)$ such that $G(t,\\tau)=g(t-\\tau)$ is the Green function of $D^2-9$.",
-    "explanation": "The Green function requires $g''-9g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{3 t}+C_2e^{- 3 t}$. The initial conditions become $C_1+C_2=0$ and $3(C_1-C_2)=1$, so $C_1=\\frac{1}{6}$ and $C_2=- \\frac{1}{6}$. Hence $g(t)=\\frac{e^{3 t}}{6} - \\frac{e^{- 3 t}}{6}=\\frac{\\sinh{\\left(3 t \\right)}}{3}$.",
+    "explanation": "The Green function requires $g''-9g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{3 t}+C_2e^{- 3 t}$. The initial conditions become $C_1+C_2=0$ and $3(C_1-C_2)=1$, so $C_1=1/6$ and $C_2=-1/6$. Hence $g(t)=e^{3 t}/6 - e^{- 3 t}/6=\\sinh(3 t)/3$.",
     "variables": [
       "t"
     ],
@@ -424,7 +424,7 @@
     "answers": [
       {
         "expression": "sinh(3*t)/3",
-        "latex": "\\frac{\\sinh{\\left(3 t \\right)}}{3}"
+        "latex": "\\sinh(3 t)/3"
       }
     ]
   },
@@ -473,14 +473,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $e^{- 2 t}$ is",
-    "explanation": "$\\mathcal{L}\\{e^{- 2 t}\\}(s)=\\frac{1}{s + 2}$, for $\\operatorname{Re} s>-2$.",
+    "explanation": "$\\mathcal{L}\\{e^{- 2 t}\\}(s)=1/(s + 2)$, for $\\operatorname{Re} s>-2$.",
     "options": [
-      "$\\frac{1}{s + 2}$",
-      "$\\frac{1}{s - 2}$",
-      "$\\frac{1}{\\left(s + 2\\right)^{2}}$",
-      "$\\frac{s}{s + 2}$"
+      "$1/(s + 2)$",
+      "$1/(s - 2)$",
+      "$1/\\left(s + 2\\right)^{2}$",
+      "$s/(s + 2)$"
     ],
-    "correct": "$\\frac{1}{s + 2}$"
+    "correct": "$1/(s + 2)$"
   },
   {
     "id": "p-25434c6d5b37",
@@ -488,7 +488,7 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\int_{|z|=2} e^{2 z}/(z-1)^{3}\\,dz$ with positive orientation.",
-    "explanation": "The function $f(z)=e^{2 z}$ is entire, and $1$ lies inside the positively oriented circle. Cauchy’s integral formula for derivatives gives the integral as $\\frac{2\\pi i}{2!}f''(1)$. Since $f''(1)=4 e^{2}$, the integral is $4 \\pi i e^{2}$.",
+    "explanation": "The function $f(z)=e^{2 z}$ is entire, and $1$ lies inside the positively oriented circle. Cauchy’s integral formula for derivatives gives the integral as $(2\\pi i/2!)f''(1)$. Since $f''(1)=4 e^{2}$, the integral is $4 \\pi i e^{2}$.",
     "variables": [],
     "labels": [],
     "unordered": false,
@@ -520,14 +520,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $e^{4 t}$ is",
-    "explanation": "$\\mathcal{L}\\{e^{4 t}\\}(s)=\\frac{1}{s - 4}$, for $\\operatorname{Re} s>4$.",
+    "explanation": "$\\mathcal{L}\\{e^{4 t}\\}(s)=1/(s - 4)$, for $\\operatorname{Re} s>4$.",
     "options": [
-      "$\\frac{1}{s - 4}$",
-      "$\\frac{1}{s + 4}$",
-      "$\\frac{1}{\\left(s - 4\\right)^{2}}$",
-      "$\\frac{s}{s - 4}$"
+      "$1/(s - 4)$",
+      "$1/(s + 4)$",
+      "$1/\\left(s - 4\\right)^{2}$",
+      "$s/(s - 4)$"
     ],
-    "correct": "$\\frac{1}{s - 4}$"
+    "correct": "$1/(s - 4)$"
   },
   {
     "id": "p-28e62656919a",
@@ -581,14 +581,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\cos(4 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\cos(4 t)\\}(s)=\\frac{s}{s^{2} + 16}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\cos(4 t)\\}(s)=s/(s^{2} + 16)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{s}{s^{2} + 16}$",
-      "$\\frac{4}{s^{2} + 16}$",
-      "$\\frac{1}{s^{2} + 16}$",
-      "$\\frac{s}{s^{2} - 16}$"
+      "$s/(s^{2} + 16)$",
+      "$4/(s^{2} + 16)$",
+      "$1/(s^{2} + 16)$",
+      "$s/(s^{2} - 16)$"
     ],
-    "correct": "$\\frac{s}{s^{2} + 16}$"
+    "correct": "$s/(s^{2} + 16)$"
   },
   {
     "id": "p-2ae51da6e0d7",
@@ -614,7 +614,7 @@
     "family": "f-8c57e4e6deac",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "For $A=\\operatorname{diag}(1,4)$, $e^{tA}$ equals",
+    "prompt": "For $A=\\operatorname{diag}(1,4)$, the matrix exponential $e^{tA}$ equals",
     "explanation": "Every power of a diagonal matrix is diagonal. Applying $e^{tA}=\\sum_{k=0}^{\\infty}t^kA^k/k!$ to the two diagonal entries gives $e^{tA}=\\operatorname{diag}(e^{t},e^{4 t})$.",
     "options": [
       "$\\begin{bmatrix}e^{t}&0\\\\0&e^{4 t}\\end{bmatrix}$",
@@ -646,8 +646,8 @@
     "family": "f-a3877a814340",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The order of the pole of $\\sin z/z^{7}$ at $0$ is",
-    "explanation": "$\\sin z=z-z^3/6+\\cdots$; after division, the leading term is $\\frac{1}{z^{6}}$.",
+    "prompt": "The order of the pole of $\\sin(z)/z^{7}$ at $0$ is",
+    "explanation": "$\\sin(z)=z-z^3/6+\\cdots$; after division, the leading term is $1/z^{6}$.",
     "options": [
       "6",
       "7",
@@ -662,7 +662,7 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "Which of $x=0$ and $x=1$ is an ordinary point of $xu''+u=0$?",
-    "explanation": "After division by the leading coefficient, $\\frac{1}{x}$ is real analytic away from $0$.",
+    "explanation": "After division by the leading coefficient, $1/x$ is real analytic away from $0$.",
     "options": [
       "$1$ only",
       "$0$ only",
@@ -694,7 +694,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $\\frac{2 s + 8}{\\left(s + 3\\right)^{2} + 4}$.",
-    "explanation": "Rewrite the numerator as $2s+8=2(s + 3)+2$. Split the transform into $2\\frac{s + 3}{(s + 3)^2+4}$ and $\\frac{2}{(s + 3)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=\\frac{s}{s^{2} + 4}$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=\\frac{2}{s^{2} + 4}$. Replacing $s$ by $s + 3$ multiplies each inverse transform by $e^{- 3 t}$ by the shift theorem. Adding the two terms gives $e^{- 3 t}\\left(2\\cos(2 t)+\\sin(2 t)\\right)$.",
+    "explanation": "Rewrite the numerator as $2s+8=2(s + 3)+2$. Split the transform into $2\\frac{s + 3}{(s + 3)^2+4}$ and $\\frac{2}{(s + 3)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=s/(s^{2} + 4)$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=2/(s^{2} + 4)$. Replacing $s$ by $s + 3$ multiplies each inverse transform by $e^{- 3 t}$ by the shift theorem. Adding the two terms gives $e^{- 3 t}\\left(2\\cos(2 t)+\\sin(2 t)\\right)$.",
     "variables": [
       "t"
     ],
@@ -743,7 +743,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\sin(4 t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\sin(4 t)$, the basic transform is $F(s)=\\frac{4}{s^{2} + 16}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{8 s}{\\left(s^{2} + 16\\right)^{2}}$. Changing the sign gives $\\frac{8 s}{\\left(s^{2} + 16\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\sin(4 t)$, the basic transform is $F(s)=4/(s^{2} + 16)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{8 s}{\\left(s^{2} + 16\\right)^{2}}$. Changing the sign gives $\\frac{8 s}{\\left(s^{2} + 16\\right)^{2}}$.",
     "variables": [
       "s"
     ],
@@ -779,7 +779,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $\\frac{2 s}{\\left(s - 1\\right)^{2} + 4}$.",
-    "explanation": "Rewrite the numerator as $2s=2(s - 1)+2$. Split the transform into $2\\frac{s - 1}{(s - 1)^2+4}$ and $\\frac{2}{(s - 1)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=\\frac{s}{s^{2} + 4}$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=\\frac{2}{s^{2} + 4}$. Replacing $s$ by $s - 1$ multiplies each inverse transform by $e^{t}$ by the shift theorem. Adding the two terms gives $e^{t}\\left(2\\cos(2 t)+\\sin(2 t)\\right)$.",
+    "explanation": "Rewrite the numerator as $2s=2(s - 1)+2$. Split the transform into $2\\frac{s - 1}{(s - 1)^2+4}$ and $\\frac{2}{(s - 1)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=s/(s^{2} + 4)$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=2/(s^{2} + 4)$. Replacing $s$ by $s - 1$ multiplies each inverse transform by $e^{t}$ by the shift theorem. Adding the two terms gives $e^{t}\\left(2\\cos(2 t)+\\sin(2 t)\\right)$.",
     "variables": [
       "t"
     ],
@@ -798,7 +798,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\cos(3 t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\cos(3 t)$, the basic transform is $F(s)=\\frac{s}{s^{2} + 9}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 3\\right) \\left(s + 3\\right)}{\\left(s^{2} + 9\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 9}{\\left(s^{2} + 9\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\cos(3 t)$, the basic transform is $F(s)=s/(s^{2} + 9)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 3\\right) \\left(s + 3\\right)}{\\left(s^{2} + 9\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 9}{\\left(s^{2} + 9\\right)^{2}}$.",
     "variables": [
       "s"
     ],
@@ -832,14 +832,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The principal argument of $-1 + i$ is",
-    "explanation": "The polar form is $-1 + i=\\sqrt{2}e^{\\frac{3 \\pi i}{4}}$. Since $\\frac{3 \\pi}{4}$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
+    "explanation": "The polar form is $-1 + i=\\sqrt{2}e^{3 \\pi i/4}$. Since $3 \\pi/4$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
     "options": [
-      "$\\frac{3 \\pi}{4}$",
-      "$\\frac{11 \\pi}{4}$",
-      "$- \\frac{5 \\pi}{4}$",
-      "$\\frac{5 \\pi}{4}$"
+      "$3 \\pi/4$",
+      "$11 \\pi/4$",
+      "$- 5 \\pi/4$",
+      "$5 \\pi/4$"
     ],
-    "correct": "$\\frac{3 \\pi}{4}$"
+    "correct": "$3 \\pi/4$"
   },
   {
     "id": "p-4395d635d748",
@@ -861,7 +861,7 @@
     "family": "f-7f83c8c1e1bb",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The singularity at $0$ of $\\frac{e^{z} - 1}{z}$ is",
+    "prompt": "The singularity at $0$ of $(e^{z} - 1)/z$ is",
     "explanation": "From $e^z-1=z+z^2/2+\\cdots$, we get $(e^z-1)/z=1+z/2+\\cdots$. The limit at $0$ is $1$, so the singularity is removable.",
     "options": [
       "removable",
@@ -877,14 +877,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\operatorname{Log}((1+i)^5)$.",
-    "explanation": "Here $(1+i)^{5}=-4 - 4 i$, with modulus $4 \\sqrt{2}$ and principal argument $- \\frac{3 \\pi}{4}$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=\\frac{5 \\ln 2}{2}$, substitution gives $\\operatorname{Log}((1+i)^{5})=\\frac{5 \\ln 2}{2} - \\frac{3 \\pi i}{4}$.",
+    "explanation": "Here $(1+i)^{5}=-4 - 4 i$, with modulus $4 \\sqrt{2}$ and principal argument $- 3 \\pi/4$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=(5 \\ln 2)/2$, substitution gives $\\operatorname{Log}((1+i)^{5})=(5 \\ln 2)/2 - 3 \\pi i/4$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "5*log(2)/2 - 3*i*pi/4",
-        "latex": "\\frac{5 \\ln 2}{2} - \\frac{3 \\pi i}{4}"
+        "latex": "(5 \\ln 2)/2 - 3 \\pi i/4"
       }
     ]
   },
@@ -910,7 +910,7 @@
     "family": "f-7f83c8c1e1bb",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The singularity at $0$ of $e^{\\frac{1}{z}}$ is",
+    "prompt": "The singularity at $0$ of $e^{1/z}$ is",
     "explanation": "$e^{1/z}=1+z^{-1}+z^{-2}/2!+\\cdots$ has infinitely many nonzero negative-power terms. Thus $0$ is an essential singularity.",
     "options": [
       "essential",
@@ -925,8 +925,8 @@
     "family": "f-7f83c8c1e1bb",
     "kind": "q2",
     "subject": "complex",
-    "prompt": "Classify each isolated singularity of $\\sin z/[z^2(z-\\pi)]$. State whether each singularity is removable, a pole, or essential. For a pole, also give its order.",
-    "explanation": "Write $f(z)=\\sin z/[z^2(z-\\pi)]$. At $0$, use $\\sin z=z-z^3/6+\\cdots$: one factor of $z$ cancels, leaving a simple pole, with $\\lim_{z\\to0}z f(z)=-1/\\pi\\ne0$. At $\\pi$, use $\\sin z=-(z-\\pi)+(z-\\pi)^3/6-\\cdots$. The factor $z-\\pi$ cancels and $\\lim_{z\\to\\pi}f(z)=-1/\\pi^2$, so that singularity is removable.",
+    "prompt": "Classify each isolated singularity of $\\sin(z)/[z^2(z-\\pi)]$. State whether each singularity is removable, a pole, or essential. For a pole, also give its order.",
+    "explanation": "Write $f(z)=\\sin(z)/[z^2(z-\\pi)]$. At $0$, use $\\sin(z)=z-z^3/6+\\cdots$: one factor of $z$ cancels, leaving a simple pole, with $\\lim_{z\\to0}z f(z)=-1/\\pi\\ne0$. At $\\pi$, use $\\sin(z)=-(z-\\pi)+(z-\\pi)^3/6-\\cdots$. The factor $z-\\pi$ cancels and $\\lim_{z\\to\\pi}f(z)=-1/\\pi^2$, so that singularity is removable.",
     "variables": [],
     "labels": [
       "At z = 0",
@@ -979,14 +979,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The principal argument of $i$ is",
-    "explanation": "The polar form is $i=e^{\\frac{\\pi i}{2}}$. Since $\\frac{\\pi}{2}$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
+    "explanation": "The polar form is $i=e^{\\pi i/2}$. Since $\\pi/2$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
     "options": [
-      "$\\frac{\\pi}{2}$",
-      "$\\frac{5 \\pi}{2}$",
-      "$- \\frac{3 \\pi}{2}$",
+      "$\\pi/2$",
+      "$5 \\pi/2$",
+      "$- 3 \\pi/2$",
       "$\\pi$"
     ],
-    "correct": "$\\frac{\\pi}{2}$"
+    "correct": "$\\pi/2$"
   },
   {
     "id": "p-48e27c8f75a5",
@@ -994,14 +994,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The residue at $0$ of $e^z/z^{5}$ is",
-    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=4$ contributes $\\frac{1}{24}$ to the coefficient of $z^{-1}$ after division.",
+    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=4$ contributes $1/24$ to the coefficient of $z^{-1}$ after division.",
     "options": [
-      "$\\frac{1}{24}$",
-      "$\\frac{1}{120}$",
-      "$- \\frac{1}{24}$",
+      "$1/24$",
+      "$1/120$",
+      "$-1/24$",
       "$0$"
     ],
-    "correct": "$\\frac{1}{24}$"
+    "correct": "$1/24$"
   },
   {
     "id": "p-4ab2827446d4",
@@ -1023,8 +1023,8 @@
     "family": "f-582ae2795ce7",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The inverse Laplace transform of $\\frac{2}{s + 3}$ is",
-    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{\\frac{2}{s + 3}\\}(t)=2 e^{- 3 t}$.",
+    "prompt": "The inverse Laplace transform of $2/(s + 3)$ is",
+    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{2/(s + 3)\\}(t)=2 e^{- 3 t}$.",
     "options": [
       "$2 e^{- 3 t}$",
       "$e^{- 3 t}$",
@@ -1039,14 +1039,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $0$ of $\\bigl(e^{4 z}-1-4 z\\bigr)/z^4$.",
-    "explanation": "The constant and linear terms cancel, leaving $e^{4 z}-1-4 z=8 z^{2}+\\frac{32 z^{3}}{3}+\\cdots$. After division by $z^4$, the first terms are $\\frac{8}{z^{2}}+\\frac{32}{3 z}+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $\\frac{32}{3}$.",
+    "explanation": "The constant and linear terms cancel, leaving $e^{4 z}-1-4 z=8 z^{2}+32 z^{3}/3+\\cdots$. After division by $z^4$, the first terms are $8/z^{2}+32/(3 z)+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $32/3$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "32/3",
-        "latex": "\\frac{32}{3}"
+        "latex": "32/3"
       }
     ]
   },
@@ -1071,7 +1071,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $\\frac{2 s + 4}{\\left(s + 1\\right)^{2} + 4}$.",
-    "explanation": "Rewrite the numerator as $2s+4=2(s + 1)+2$. Split the transform into $2\\frac{s + 1}{(s + 1)^2+4}$ and $\\frac{2}{(s + 1)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=\\frac{s}{s^{2} + 4}$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=\\frac{2}{s^{2} + 4}$. Replacing $s$ by $s + 1$ multiplies each inverse transform by $e^{- t}$ by the shift theorem. Adding the two terms gives $e^{- t}\\left(2\\cos(2 t)+\\sin(2 t)\\right)$.",
+    "explanation": "Rewrite the numerator as $2s+4=2(s + 1)+2$. Split the transform into $2\\frac{s + 1}{(s + 1)^2+4}$ and $\\frac{2}{(s + 1)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=s/(s^{2} + 4)$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=2/(s^{2} + 4)$. Replacing $s$ by $s + 1$ multiplies each inverse transform by $e^{- t}$ by the shift theorem. Adding the two terms gives $e^{- t}\\left(2\\cos(2 t)+\\sin(2 t)\\right)$.",
     "variables": [
       "t"
     ],
@@ -1133,14 +1133,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $0$ of $\\bigl(e^{5 z}-1-5 z\\bigr)/z^4$.",
-    "explanation": "The constant and linear terms cancel, leaving $e^{5 z}-1-5 z=\\frac{25 z^{2}}{2}+\\frac{125 z^{3}}{6}+\\cdots$. After division by $z^4$, the first terms are $\\frac{25}{2 z^{2}}+\\frac{125}{6 z}+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $\\frac{125}{6}$.",
+    "explanation": "The constant and linear terms cancel, leaving $e^{5 z}-1-5 z=25 z^{2}/2+125 z^{3}/6+\\cdots$. After division by $z^4$, the first terms are $25/(2 z^{2})+125/(6 z)+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $125/6$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "125/6",
-        "latex": "\\frac{125}{6}"
+        "latex": "125/6"
       }
     ]
   },
@@ -1181,7 +1181,7 @@
     "family": "f-8c57e4e6deac",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "For $A=\\operatorname{diag}(-1,2)$, $e^{tA}$ equals",
+    "prompt": "For $A=\\operatorname{diag}(-1,2)$, the matrix exponential $e^{tA}$ equals",
     "explanation": "Every power of a diagonal matrix is diagonal. Applying $e^{tA}=\\sum_{k=0}^{\\infty}t^kA^k/k!$ to the two diagonal entries gives $e^{tA}=\\operatorname{diag}(e^{- t},e^{2 t})$.",
     "options": [
       "$\\begin{bmatrix}e^{- t}&0\\\\0&e^{2 t}\\end{bmatrix}$",
@@ -1228,22 +1228,22 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $e^{t}$ is",
-    "explanation": "$\\mathcal{L}\\{e^{t}\\}(s)=\\frac{1}{s - 1}$, for $\\operatorname{Re} s>1$.",
+    "explanation": "$\\mathcal{L}\\{e^{t}\\}(s)=1/(s - 1)$, for $\\operatorname{Re} s>1$.",
     "options": [
-      "$\\frac{1}{s - 1}$",
-      "$\\frac{1}{s + 1}$",
-      "$\\frac{1}{\\left(s - 1\\right)^{2}}$",
-      "$\\frac{s}{s - 1}$"
+      "$1/(s - 1)$",
+      "$1/(s + 1)$",
+      "$1/\\left(s - 1\\right)^{2}$",
+      "$s/(s - 1)$"
     ],
-    "correct": "$\\frac{1}{s - 1}$"
+    "correct": "$1/(s - 1)$"
   },
   {
     "id": "p-5a28f601d662",
     "family": "f-a3877a814340",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The order of the pole of $\\sin z/z^{4}$ at $0$ is",
-    "explanation": "$\\sin z=z-z^3/6+\\cdots$; after division, the leading term is $\\frac{1}{z^{3}}$.",
+    "prompt": "The order of the pole of $\\sin(z)/z^{4}$ at $0$ is",
+    "explanation": "$\\sin(z)=z-z^3/6+\\cdots$; after division, the leading term is $1/z^{3}$.",
     "options": [
       "3",
       "4",
@@ -1293,9 +1293,9 @@
     "explanation": "$1/i=-i$, so $1+1/i=1-i$ has imaginary part $-1$.",
     "options": [
       "$-1$",
-      "$-\\frac12$",
+      "$-1/2$",
       "$0$",
-      "$\\frac12$",
+      "$1/2$",
       "$1$"
     ],
     "correct": "$-1$"
@@ -1306,7 +1306,7 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "Which of $x=1$ and $x=2$ is an ordinary point of $(x-1)u''+u=0$?",
-    "explanation": "After division by the leading coefficient, $\\frac{1}{x - 1}$ is real analytic away from $1$.",
+    "explanation": "After division by the leading coefficient, $1/(x - 1)$ is real analytic away from $1$.",
     "options": [
       "$2$ only",
       "$1$ only",
@@ -1321,21 +1321,21 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\sin(5 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\sin(5 t)\\}(s)=\\frac{5}{s^{2} + 25}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\sin(5 t)\\}(s)=5/(s^{2} + 25)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{5}{s^{2} + 25}$",
-      "$\\frac{s}{s^{2} + 25}$",
-      "$\\frac{1}{s^{2} + 25}$",
-      "$\\frac{5}{s^{2} - 25}$"
+      "$5/(s^{2} + 25)$",
+      "$s/(s^{2} + 25)$",
+      "$1/(s^{2} + 25)$",
+      "$5/(s^{2} - 25)$"
     ],
-    "correct": "$\\frac{5}{s^{2} + 25}$"
+    "correct": "$5/(s^{2} + 25)$"
   },
   {
     "id": "p-5ded0f0b4a77",
     "family": "f-8c57e4e6deac",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "For a square matrix $N$ with $N^2=0$, $e^{tN}$ equals",
+    "prompt": "For a square matrix $N$ with $N^2=0$, the matrix exponential $e^{tN}$ equals",
     "explanation": "All powers $N^k$ for $k\\ge2$ vanish, so the exponential series terminates after $I+tN$.",
     "options": [
       "$I+tN$",
@@ -1351,7 +1351,7 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\int_{|z|=2} e^{3 z}/(z-1)^{3}\\,dz$ with positive orientation.",
-    "explanation": "The function $f(z)=e^{3 z}$ is entire, and $1$ lies inside the positively oriented circle. Cauchy’s integral formula for derivatives gives the integral as $\\frac{2\\pi i}{2!}f''(1)$. Since $f''(1)=9 e^{3}$, the integral is $9 \\pi i e^{3}$.",
+    "explanation": "The function $f(z)=e^{3 z}$ is entire, and $1$ lies inside the positively oriented circle. Cauchy’s integral formula for derivatives gives the integral as $(2\\pi i/2!)f''(1)$. Since $f''(1)=9 e^{3}$, the integral is $9 \\pi i e^{3}$.",
     "variables": [],
     "labels": [],
     "unordered": false,
@@ -1555,7 +1555,7 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "For $f(z)=(\\operatorname{Im}z)^2$, find $\\partial_zf(1+2i)$ and $\\partial_{\\bar z}f(1+2i)$.",
-    "explanation": "Write $y=\\operatorname{Im}z=(z-\\bar z)/(2i)$. Treating $z$ and $\\bar z$ as independent gives $\\partial_z y=1/(2i)$ and $\\partial_{\\bar z}y=-1/(2i)$. Since $f=y^2$, the chain rule gives $\\partial_zf=2y/(2i)=-iy$ and $\\partial_{\\bar z}f=-2y/(2i)=iy$. At $1+2i$, $y=2$, so the answers are $-2i$ and $2i$.",
+    "explanation": "Write $y=\\operatorname{Im}z=(z-\\bar z)/(2i)$. Treating $z$ and $\\bar z$ as independent gives $\\partial_z y=1/(2i)$ and $\\partial_{\\bar z}y=-1/(2i)$. Since $f=y^2$, the chain rule gives $\\partial_zf=2y/(2i)=-iy$ and $\\partial_{\\bar z}f=-2y/(2i)=iy$. At $1+2i$, we have $y=2$, so the answers are $-2i$ and $2i$.",
     "variables": [],
     "labels": [
       "∂f/∂z at 1+2i",
@@ -1579,7 +1579,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find $g(t)$ such that $G(t,\\tau)=g(t-\\tau)$ is the Green function of $D^2-16$.",
-    "explanation": "The Green function requires $g''-16g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{4 t}+C_2e^{- 4 t}$. The initial conditions become $C_1+C_2=0$ and $4(C_1-C_2)=1$, so $C_1=\\frac{1}{8}$ and $C_2=- \\frac{1}{8}$. Hence $g(t)=\\frac{e^{4 t}}{8} - \\frac{e^{- 4 t}}{8}=\\frac{\\sinh{\\left(4 t \\right)}}{4}$.",
+    "explanation": "The Green function requires $g''-16g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{4 t}+C_2e^{- 4 t}$. The initial conditions become $C_1+C_2=0$ and $4(C_1-C_2)=1$, so $C_1=1/8$ and $C_2=-1/8$. Hence $g(t)=e^{4 t}/8 - e^{- 4 t}/8=\\sinh(4 t)/4$.",
     "variables": [
       "t"
     ],
@@ -1588,7 +1588,7 @@
     "answers": [
       {
         "expression": "sinh(4*t)/4",
-        "latex": "\\frac{\\sinh{\\left(4 t \\right)}}{4}"
+        "latex": "\\sinh(4 t)/4"
       }
     ]
   },
@@ -1613,13 +1613,13 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\cos(t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\cos(t)\\}(s)=\\frac{s}{s^{2} + 1}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\cos(t)\\}(s)=s/(s^{2} + 1)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{s}{s^{2} + 1}$",
-      "$\\frac{1}{s^{2} + 1}$",
-      "$\\frac{s}{s^{2} - 1}$"
+      "$s/(s^{2} + 1)$",
+      "$1/(s^{2} + 1)$",
+      "$s/(s^{2} - 1)$"
     ],
-    "correct": "$\\frac{s}{s^{2} + 1}$"
+    "correct": "$s/(s^{2} + 1)$"
   },
   {
     "id": "p-6c6680604f64",
@@ -1627,7 +1627,7 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "Which of $x=2$ and $x=3$ is an ordinary point of $(x-2)u''+u=0$?",
-    "explanation": "After division by the leading coefficient, $\\frac{1}{x - 2}$ is real analytic away from $2$.",
+    "explanation": "After division by the leading coefficient, $1/(x - 2)$ is real analytic away from $2$.",
     "options": [
       "$3$ only",
       "$2$ only",
@@ -1642,7 +1642,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Solve $u'+4u=e^{- 2 t}$, $u(0)=0$.",
-    "explanation": "The integrating factor is $e^{4 t}$. Multiplying gives $(e^{4 t}u)'=e^{2 t}$. Integrating from $0$ to $t$ and using $u(0)=0$ gives $e^{4 t}u(t)=\\frac{e^{2 t}}{2} - \\frac{1}{2}$. Dividing by $e^{4 t}$ yields $u(t)=\\frac{e^{- 2 t}}{2} - \\frac{e^{- 4 t}}{2}$.",
+    "explanation": "The integrating factor is $e^{4 t}$. Multiplying gives $(e^{4 t}u)'=e^{2 t}$. Integrating from $0$ to $t$ and using $u(0)=0$ gives $e^{4 t}u(t)=e^{2 t}/2 - 1/2$. Dividing by $e^{4 t}$ yields $u(t)=e^{- 2 t}/2 - e^{- 4 t}/2$.",
     "variables": [
       "t"
     ],
@@ -1651,7 +1651,7 @@
     "answers": [
       {
         "expression": "exp(-2*t)/2 - exp(-4*t)/2",
-        "latex": "\\frac{e^{- 2 t}}{2} - \\frac{e^{- 4 t}}{2}"
+        "latex": "e^{- 2 t}/2 - e^{- 4 t}/2"
       }
     ]
   },
@@ -1660,8 +1660,8 @@
     "family": "f-a3877a814340",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The order of the pole of $\\sin z/z^{2}$ at $0$ is",
-    "explanation": "$\\sin z=z-z^3/6+\\cdots$; after division, the leading term is $\\frac{1}{z}$.",
+    "prompt": "The order of the pole of $\\sin(z)/z^{2}$ at $0$ is",
+    "explanation": "$\\sin(z)=z-z^3/6+\\cdots$; after division, the leading term is $1/z$.",
     "options": [
       "1",
       "2",
@@ -1697,14 +1697,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $z=1$ of $e^{z}/(z-1)^3$.",
-    "explanation": "Write $g(z)=e^{z}$, so $f(z)=g(z)/(z-1)^{3}$. The pole has order 3, and the residue formula gives $\\operatorname{Res}(f,1)=g''(1)/2$. Here $g''(z)=e^{z}$. Evaluating at $1$ and dividing by $2$ gives $\\frac{e}{2}$.",
+    "explanation": "Write $g(z)=e^{z}$, so $f(z)=g(z)/(z-1)^{3}$. The pole has order 3, and the residue formula gives $\\operatorname{Res}(f,1)=g''(1)/2$. Here $g''(z)=e^{z}$. Evaluating at $1$ and dividing by $2$ gives $e/2$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "e/2",
-        "latex": "\\frac{e}{2}"
+        "latex": "e/2"
       }
     ]
   },
@@ -1735,13 +1735,13 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\sin(t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\sin(t)\\}(s)=\\frac{1}{s^{2} + 1}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\sin(t)\\}(s)=1/(s^{2} + 1)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{1}{s^{2} + 1}$",
-      "$\\frac{s}{s^{2} + 1}$",
-      "$\\frac{1}{s^{2} - 1}$"
+      "$1/(s^{2} + 1)$",
+      "$s/(s^{2} + 1)$",
+      "$1/(s^{2} - 1)$"
     ],
-    "correct": "$\\frac{1}{s^{2} + 1}$"
+    "correct": "$1/(s^{2} + 1)$"
   },
   {
     "id": "p-7140fb5b003d",
@@ -1752,7 +1752,7 @@
     "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=1$ contributes $1$ to the coefficient of $z^{-1}$ after division.",
     "options": [
       "$1$",
-      "$\\frac{1}{2}$",
+      "$1/2$",
       "$-1$",
       "$0$"
     ],
@@ -1773,7 +1773,7 @@
     "answers": [
       {
         "expression": "(2/s + s^(-2))*exp(-2*s)",
-        "latex": "\\left(\\frac{2}{s} + \\frac{1}{s^{2}}\\right) e^{- 2 s}"
+        "latex": "\\left(2/s + 1/s^{2}\\right) e^{- 2 s}"
       }
     ]
   },
@@ -1815,7 +1815,7 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\int_{|z|=2} e^{z}/(z-1)^{3}\\,dz$ with positive orientation.",
-    "explanation": "The function $f(z)=e^{z}$ is entire, and $1$ lies inside the positively oriented circle. Cauchy’s integral formula for derivatives gives the integral as $\\frac{2\\pi i}{2!}f''(1)$. Since $f''(1)=e$, the integral is $\\pi i e$.",
+    "explanation": "The function $f(z)=e^{z}$ is entire, and $1$ lies inside the positively oriented circle. Cauchy’s integral formula for derivatives gives the integral as $(2\\pi i/2!)f''(1)$. Since $f''(1)=e$, the integral is $\\pi i e$.",
     "variables": [],
     "labels": [],
     "unordered": false,
@@ -1832,14 +1832,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The principal argument of $-1 - i$ is",
-    "explanation": "The polar form is $-1 - i=\\sqrt{2}e^{- \\frac{3 \\pi i}{4}}$. Since $- \\frac{3 \\pi}{4}$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
+    "explanation": "The polar form is $-1 - i=\\sqrt{2}e^{- 3 \\pi i/4}$. Since $- 3 \\pi/4$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
     "options": [
-      "$- \\frac{3 \\pi}{4}$",
-      "$\\frac{5 \\pi}{4}$",
-      "$- \\frac{11 \\pi}{4}$",
-      "$- \\frac{\\pi}{4}$"
+      "$- 3 \\pi/4$",
+      "$5 \\pi/4$",
+      "$- 11 \\pi/4$",
+      "$- \\pi/4$"
     ],
-    "correct": "$- \\frac{3 \\pi}{4}$"
+    "correct": "$- 3 \\pi/4$"
   },
   {
     "id": "p-7657f71f4407",
@@ -1904,7 +1904,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\sin(t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\sin(t)$, the basic transform is $F(s)=\\frac{1}{s^{2} + 1}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{2 s}{\\left(s^{2} + 1\\right)^{2}}$. Changing the sign gives $\\frac{2 s}{\\left(s^{2} + 1\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\sin(t)$, the basic transform is $F(s)=1/(s^{2} + 1)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{2 s}{\\left(s^{2} + 1\\right)^{2}}$. Changing the sign gives $\\frac{2 s}{\\left(s^{2} + 1\\right)^{2}}$.",
     "variables": [
       "s"
     ],
@@ -1983,7 +1983,7 @@
     "answers": [
       {
         "expression": "C/x^2 + x^3/5",
-        "latex": "\\frac{x^3}{5}+\\frac{C}{x^2}"
+        "latex": "x^3/5+C/x^2"
       }
     ]
   },
@@ -1992,8 +1992,8 @@
     "family": "f-8c57e4e6deac",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "For $A=\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}$, $e^{tA}$ equals",
-    "explanation": "Direct multiplication gives $A^2=\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}=0$. Thus every power $A^k$ with $k\\ge2$ is zero. In $e^{tA}=I+tA+\\frac{t^2A^2}{2!}+\\cdots$, only the first two terms remain. Therefore $e^{tA}=I+tA=\\begin{bmatrix}1&2 t\\\\0&1\\end{bmatrix}$.",
+    "prompt": "For $A=\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}$, the matrix exponential $e^{tA}$ equals",
+    "explanation": "Direct multiplication gives $A^2=\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}\\begin{bmatrix}0&2\\\\0&0\\end{bmatrix}=0$. Thus every power $A^k$ with $k\\ge2$ is zero. In $e^{tA}=I+tA+t^2A^2/2!+\\cdots$, only the first two terms remain. Therefore $e^{tA}=I+tA=\\begin{bmatrix}1&2 t\\\\0&1\\end{bmatrix}$.",
     "options": [
       "$\\begin{bmatrix}1&2 t\\\\0&1\\end{bmatrix}$",
       "$\\begin{bmatrix}1&- 2 t\\\\0&1\\end{bmatrix}$",
@@ -2008,7 +2008,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "For $u'=3u+1$, $u(0)=0$, $u_0(t)=0$, give the second Picard iterate $u_2(t)$.",
-    "explanation": "The iteration is $u_{n+1}(t)=\\int_0^t(3u_n(v)+1)\\,dv$. Starting from $u_0=0$ gives $u_1(t)=\\int_0^t1\\,dv=t$. Substitute this into the same integral: $u_2(t)=\\int_0^t(3 v + 1)\\,dv=\\frac{3 t^{2}}{2} + t$.",
+    "explanation": "The iteration is $u_{n+1}(t)=\\int_0^t(3u_n(v)+1)\\,dv$. Starting from $u_0=0$ gives $u_1(t)=\\int_0^t1\\,dv=t$. Substitute this into the same integral: $u_2(t)=\\int_0^t(3 v + 1)\\,dv=3 t^{2}/2 + t$.",
     "variables": [
       "t"
     ],
@@ -2017,7 +2017,7 @@
     "answers": [
       {
         "expression": "3*t^2/2 + t",
-        "latex": "\\frac{3 t^{2}}{2} + t"
+        "latex": "3 t^{2}/2 + t"
       }
     ]
   },
@@ -2027,7 +2027,7 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "Which of $x=3$ and $x=4$ is an ordinary point of $(x-3)u''+u=0$?",
-    "explanation": "After division by the leading coefficient, $\\frac{1}{x - 3}$ is real analytic away from $3$.",
+    "explanation": "After division by the leading coefficient, $1/(x - 3)$ is real analytic away from $3$.",
     "options": [
       "$4$ only",
       "$3$ only",
@@ -2042,14 +2042,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $0$ of $\\bigl(e^{2 z}-1-2 z\\bigr)/z^4$.",
-    "explanation": "The constant and linear terms cancel, leaving $e^{2 z}-1-2 z=2 z^{2}+\\frac{4 z^{3}}{3}+\\cdots$. After division by $z^4$, the first terms are $\\frac{2}{z^{2}}+\\frac{4}{3 z}+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $\\frac{4}{3}$.",
+    "explanation": "The constant and linear terms cancel, leaving $e^{2 z}-1-2 z=2 z^{2}+4 z^{3}/3+\\cdots$. After division by $z^4$, the first terms are $2/z^{2}+4/(3 z)+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $4/3$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "4/3",
-        "latex": "\\frac{4}{3}"
+        "latex": "4/3"
       }
     ]
   },
@@ -2075,14 +2075,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\operatorname{Log}((1+i)^2)$.",
-    "explanation": "Here $(1+i)^{2}=2 i$, with modulus $2$ and principal argument $\\frac{\\pi}{2}$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=\\ln 2$, substitution gives $\\operatorname{Log}((1+i)^{2})=\\ln 2 + \\frac{\\pi i}{2}$.",
+    "explanation": "Here $(1+i)^{2}=2 i$, with modulus $2$ and principal argument $\\pi/2$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=\\ln 2$, substitution gives $\\operatorname{Log}((1+i)^{2})=\\ln 2 + \\pi i/2$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "log(2) + i*pi/2",
-        "latex": "\\ln 2 + \\frac{\\pi i}{2}"
+        "latex": "\\ln 2 + \\pi i/2"
       }
     ]
   },
@@ -2123,7 +2123,7 @@
     "family": "f-917f7ef1a25f",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The radius of convergence of the Taylor series about $0$ of $\\frac{1}{z - 4}$ is",
+    "prompt": "The radius of convergence of the Taylor series about $0$ of $1/(z - 4)$ is",
     "explanation": "The only singularity is the pole at $z=4$. The Taylor series about $0$ converges up to the nearest singularity, so $R=|4-0|=4$.",
     "options": [
       "$4$",
@@ -2182,8 +2182,8 @@
     "family": "f-8c57e4e6deac",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "For $A=\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}$, $e^{tA}$ equals",
-    "explanation": "Direct multiplication gives $A^2=\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}=0$. Thus every power $A^k$ with $k\\ge2$ is zero. In $e^{tA}=I+tA+\\frac{t^2A^2}{2!}+\\cdots$, only the first two terms remain. Therefore $e^{tA}=I+tA=\\begin{bmatrix}1 + t&t\\\\- t&1 - t\\end{bmatrix}$.",
+    "prompt": "For $A=\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}$, the matrix exponential $e^{tA}$ equals",
+    "explanation": "Direct multiplication gives $A^2=\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}\\begin{bmatrix}1&1\\\\-1&-1\\end{bmatrix}=0$. Thus every power $A^k$ with $k\\ge2$ is zero. In $e^{tA}=I+tA+t^2A^2/2!+\\cdots$, only the first two terms remain. Therefore $e^{tA}=I+tA=\\begin{bmatrix}1 + t&t\\\\- t&1 - t\\end{bmatrix}$.",
     "options": [
       "$\\begin{bmatrix}1 + t&t\\\\- t&1 - t\\end{bmatrix}$",
       "$\\begin{bmatrix}1 - t&- t\\\\t&1 + t\\end{bmatrix}$",
@@ -2198,7 +2198,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\cos(4 t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\cos(4 t)$, the basic transform is $F(s)=\\frac{s}{s^{2} + 16}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 4\\right) \\left(s + 4\\right)}{\\left(s^{2} + 16\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 16}{\\left(s^{2} + 16\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\cos(4 t)$, the basic transform is $F(s)=s/(s^{2} + 16)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 4\\right) \\left(s + 4\\right)}{\\left(s^{2} + 16\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 16}{\\left(s^{2} + 16\\right)^{2}}$.",
     "variables": [
       "s"
     ],
@@ -2217,7 +2217,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $\\frac{2 s + 7}{\\left(s + 2\\right)^{2} + 9}$.",
-    "explanation": "Rewrite the numerator as $2s+7=2(s + 2)+3$. Split the transform into $2\\frac{s + 2}{(s + 2)^2+9}$ and $\\frac{3}{(s + 2)^2+9}$. Use $\\mathcal{L}\\{\\cos(3 t)\\}(s)=\\frac{s}{s^{2} + 9}$ and $\\mathcal{L}\\{\\sin(3 t)\\}(s)=\\frac{3}{s^{2} + 9}$. Replacing $s$ by $s + 2$ multiplies each inverse transform by $e^{- 2 t}$ by the shift theorem. Adding the two terms gives $e^{- 2 t}\\left(2\\cos(3 t)+\\sin(3 t)\\right)$.",
+    "explanation": "Rewrite the numerator as $2s+7=2(s + 2)+3$. Split the transform into $2\\frac{s + 2}{(s + 2)^2+9}$ and $\\frac{3}{(s + 2)^2+9}$. Use $\\mathcal{L}\\{\\cos(3 t)\\}(s)=s/(s^{2} + 9)$ and $\\mathcal{L}\\{\\sin(3 t)\\}(s)=3/(s^{2} + 9)$. Replacing $s$ by $s + 2$ multiplies each inverse transform by $e^{- 2 t}$ by the shift theorem. Adding the two terms gives $e^{- 2 t}\\left(2\\cos(3 t)+\\sin(3 t)\\right)$.",
     "variables": [
       "t"
     ],
@@ -2236,14 +2236,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $e^{2 t}$ is",
-    "explanation": "$\\mathcal{L}\\{e^{2 t}\\}(s)=\\frac{1}{s - 2}$, for $\\operatorname{Re} s>2$.",
+    "explanation": "$\\mathcal{L}\\{e^{2 t}\\}(s)=1/(s - 2)$, for $\\operatorname{Re} s>2$.",
     "options": [
-      "$\\frac{1}{s - 2}$",
-      "$\\frac{1}{s + 2}$",
-      "$\\frac{1}{\\left(s - 2\\right)^{2}}$",
-      "$\\frac{s}{s - 2}$"
+      "$1/(s - 2)$",
+      "$1/(s + 2)$",
+      "$1/\\left(s - 2\\right)^{2}$",
+      "$s/(s - 2)$"
     ],
-    "correct": "$\\frac{1}{s - 2}$"
+    "correct": "$1/(s - 2)$"
   },
   {
     "id": "p-8c5166a83ac8",
@@ -2270,14 +2270,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The principal argument of $- i$ is",
-    "explanation": "The polar form is $- i=e^{- \\frac{\\pi i}{2}}$. Since $- \\frac{\\pi}{2}$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
+    "explanation": "The polar form is $- i=e^{- \\pi i/2}$. Since $- \\pi/2$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
     "options": [
-      "$- \\frac{\\pi}{2}$",
-      "$\\frac{3 \\pi}{2}$",
-      "$- \\frac{5 \\pi}{2}$",
+      "$- \\pi/2$",
+      "$3 \\pi/2$",
+      "$- 5 \\pi/2$",
       "$0$"
     ],
-    "correct": "$- \\frac{\\pi}{2}$"
+    "correct": "$- \\pi/2$"
   },
   {
     "id": "p-8d7adf418451",
@@ -2301,8 +2301,8 @@
     "family": "f-7f83c8c1e1bb",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The singularity at $0$ of $\\frac{\\cos{\\left(z \\right)}}{z}$ is",
-    "explanation": "$\\cos z/z=z^{-1}-z/2+\\cdots$. The only negative-power term is $z^{-1}$, so $0$ is a simple pole.",
+    "prompt": "The singularity at $0$ of $\\cos(z)/z$ is",
+    "explanation": "$\\cos(z)/z=z^{-1}-z/2+\\cdots$. The only negative-power term is $z^{-1}$, so $0$ is a simple pole.",
     "options": [
       "a simple pole",
       "removable",
@@ -2351,14 +2351,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The residue at $0$ of $e^z/z^{3}$ is",
-    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=2$ contributes $\\frac{1}{2}$ to the coefficient of $z^{-1}$ after division.",
+    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=2$ contributes $1/2$ to the coefficient of $z^{-1}$ after division.",
     "options": [
-      "$\\frac{1}{2}$",
-      "$\\frac{1}{6}$",
-      "$- \\frac{1}{2}$",
+      "$1/2$",
+      "$1/6$",
+      "$-1/2$",
       "$0$"
     ],
-    "correct": "$\\frac{1}{2}$"
+    "correct": "$1/2$"
   },
   {
     "id": "p-94ea4345c737",
@@ -2366,7 +2366,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find $g(t)$ such that $G(t,\\tau)=g(t-\\tau)$ is the Green function of $D^2-1$.",
-    "explanation": "The Green function requires $g''-g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{t}+C_2e^{- t}$. The initial conditions become $C_1+C_2=0$ and $(C_1-C_2)=1$, so $C_1=\\frac{1}{2}$ and $C_2=- \\frac{1}{2}$. Hence $g(t)=\\frac{e^{t}}{2} - \\frac{e^{- t}}{2}=\\sinh{\\left(t \\right)}$.",
+    "explanation": "The Green function requires $g''-g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{t}+C_2e^{- t}$. The initial conditions become $C_1+C_2=0$ and $(C_1-C_2)=1$, so $C_1=1/2$ and $C_2=-1/2$. Hence $g(t)=e^{t}/2 - e^{- t}/2=\\sinh(t)$.",
     "variables": [
       "t"
     ],
@@ -2375,7 +2375,7 @@
     "answers": [
       {
         "expression": "sinh(t)",
-        "latex": "\\sinh{\\left(t \\right)}"
+        "latex": "\\sinh(t)"
       }
     ]
   },
@@ -2385,14 +2385,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The principal argument of $1 - i$ is",
-    "explanation": "The polar form is $1 - i=\\sqrt{2}e^{- \\frac{\\pi i}{4}}$. Since $- \\frac{\\pi}{4}$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
+    "explanation": "The polar form is $1 - i=\\sqrt{2}e^{- \\pi i/4}$. Since $- \\pi/4$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
     "options": [
-      "$- \\frac{\\pi}{4}$",
-      "$\\frac{7 \\pi}{4}$",
-      "$- \\frac{9 \\pi}{4}$",
-      "$\\frac{\\pi}{4}$"
+      "$- \\pi/4$",
+      "$7 \\pi/4$",
+      "$- 9 \\pi/4$",
+      "$\\pi/4$"
     ],
-    "correct": "$- \\frac{\\pi}{4}$"
+    "correct": "$- \\pi/4$"
   },
   {
     "id": "p-95239717680a",
@@ -2461,7 +2461,7 @@
     "family": "f-8c57e4e6deac",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "For $A=\\operatorname{diag}(2,3)$, $e^{tA}$ equals",
+    "prompt": "For $A=\\operatorname{diag}(2,3)$, the matrix exponential $e^{tA}$ equals",
     "explanation": "Every power of a diagonal matrix is diagonal. Applying $e^{tA}=\\sum_{k=0}^{\\infty}t^kA^k/k!$ to the two diagonal entries gives $e^{tA}=\\operatorname{diag}(e^{2 t},e^{3 t})$.",
     "options": [
       "$\\begin{bmatrix}e^{2 t}&0\\\\0&e^{3 t}\\end{bmatrix}$",
@@ -2494,14 +2494,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The principal argument of $1 + i$ is",
-    "explanation": "The polar form is $1 + i=\\sqrt{2}e^{\\frac{\\pi i}{4}}$. Since $\\frac{\\pi}{4}$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
+    "explanation": "The polar form is $1 + i=\\sqrt{2}e^{\\pi i/4}$. Since $\\pi/4$ lies in $(-\\pi,\\pi]$, it is the principal argument.",
     "options": [
-      "$\\frac{\\pi}{4}$",
-      "$\\frac{9 \\pi}{4}$",
-      "$- \\frac{7 \\pi}{4}$",
-      "$\\frac{3 \\pi}{4}$"
+      "$\\pi/4$",
+      "$9 \\pi/4$",
+      "$- 7 \\pi/4$",
+      "$3 \\pi/4$"
     ],
-    "correct": "$\\frac{\\pi}{4}$"
+    "correct": "$\\pi/4$"
   },
   {
     "id": "p-9f3d963a7f80",
@@ -2524,14 +2524,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $0$ of $\\bigl(e^{z}-1-z\\bigr)/z^4$.",
-    "explanation": "The constant and linear terms cancel, leaving $e^{z}-1-z=\\frac{z^{2}}{2}+\\frac{z^{3}}{6}+\\cdots$. After division by $z^4$, the first terms are $\\frac{1}{2 z^{2}}+\\frac{1}{6 z}+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $\\frac{1}{6}$.",
+    "explanation": "The constant and linear terms cancel, leaving $e^{z}-1-z=z^{2}/2+z^{3}/6+\\cdots$. After division by $z^4$, the first terms are $1/(2 z^{2})+1/(6 z)+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $1/6$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "1/6",
-        "latex": "\\frac{1}{6}"
+        "latex": "1/6"
       }
     ]
   },
@@ -2626,7 +2626,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Solve $u'+4u=e^{- t}$, $u(0)=0$.",
-    "explanation": "The integrating factor is $e^{4 t}$. Multiplying gives $(e^{4 t}u)'=e^{3 t}$. Integrating from $0$ to $t$ and using $u(0)=0$ gives $e^{4 t}u(t)=\\frac{e^{3 t}}{3} - \\frac{1}{3}$. Dividing by $e^{4 t}$ yields $u(t)=\\frac{e^{- t}}{3} - \\frac{e^{- 4 t}}{3}$.",
+    "explanation": "The integrating factor is $e^{4 t}$. Multiplying gives $(e^{4 t}u)'=e^{3 t}$. Integrating from $0$ to $t$ and using $u(0)=0$ gives $e^{4 t}u(t)=e^{3 t}/3 - 1/3$. Dividing by $e^{4 t}$ yields $u(t)=e^{- t}/3 - e^{- 4 t}/3$.",
     "variables": [
       "t"
     ],
@@ -2635,7 +2635,7 @@
     "answers": [
       {
         "expression": "exp(-t)/3 - exp(-4*t)/3",
-        "latex": "\\frac{e^{- t}}{3} - \\frac{e^{- 4 t}}{3}"
+        "latex": "e^{- t}/3 - e^{- 4 t}/3"
       }
     ]
   },
@@ -2690,7 +2690,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\cos(t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\cos(t)$, the basic transform is $F(s)=\\frac{s}{s^{2} + 1}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 1\\right) \\left(s + 1\\right)}{\\left(s^{2} + 1\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 1}{\\left(s^{2} + 1\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\cos(t)$, the basic transform is $F(s)=s/(s^{2} + 1)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 1\\right) \\left(s + 1\\right)}{\\left(s^{2} + 1\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 1}{\\left(s^{2} + 1\\right)^{2}}$.",
     "variables": [
       "s"
     ],
@@ -2739,14 +2739,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\operatorname{Log}((1+i)^6)$.",
-    "explanation": "Here $(1+i)^{6}=- 8 i$, with modulus $8$ and principal argument $- \\frac{\\pi}{2}$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=3 \\ln 2$, substitution gives $\\operatorname{Log}((1+i)^{6})=3 \\ln 2 - \\frac{\\pi i}{2}$.",
+    "explanation": "Here $(1+i)^{6}=- 8 i$, with modulus $8$ and principal argument $- \\pi/2$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=3 \\ln 2$, substitution gives $\\operatorname{Log}((1+i)^{6})=3 \\ln 2 - \\pi i/2$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "3*log(2) - i*pi/2",
-        "latex": "3 \\ln 2 - \\frac{\\pi i}{2}"
+        "latex": "3 \\ln 2 - \\pi i/2"
       }
     ]
   },
@@ -2810,14 +2810,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\sin(4 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\sin(4 t)\\}(s)=\\frac{4}{s^{2} + 16}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\sin(4 t)\\}(s)=4/(s^{2} + 16)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{4}{s^{2} + 16}$",
-      "$\\frac{s}{s^{2} + 16}$",
-      "$\\frac{1}{s^{2} + 16}$",
-      "$\\frac{4}{s^{2} - 16}$"
+      "$4/(s^{2} + 16)$",
+      "$s/(s^{2} + 16)$",
+      "$1/(s^{2} + 16)$",
+      "$4/(s^{2} - 16)$"
     ],
-    "correct": "$\\frac{4}{s^{2} + 16}$"
+    "correct": "$4/(s^{2} + 16)$"
   },
   {
     "id": "p-b802a32a2acc",
@@ -2869,8 +2869,8 @@
     "family": "f-582ae2795ce7",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The inverse Laplace transform of $\\frac{4}{s + 1}$ is",
-    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{\\frac{4}{s + 1}\\}(t)=4 e^{- t}$.",
+    "prompt": "The inverse Laplace transform of $4/(s + 1)$ is",
+    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{4/(s + 1)\\}(t)=4 e^{- t}$.",
     "options": [
       "$4 e^{- t}$",
       "$e^{- t}$",
@@ -2900,14 +2900,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $e^{- t}$ is",
-    "explanation": "$\\mathcal{L}\\{e^{- t}\\}(s)=\\frac{1}{s + 1}$, for $\\operatorname{Re} s>-1$.",
+    "explanation": "$\\mathcal{L}\\{e^{- t}\\}(s)=1/(s + 1)$, for $\\operatorname{Re} s>-1$.",
     "options": [
-      "$\\frac{1}{s + 1}$",
-      "$\\frac{1}{s - 1}$",
-      "$\\frac{1}{\\left(s + 1\\right)^{2}}$",
-      "$\\frac{s}{s + 1}$"
+      "$1/(s + 1)$",
+      "$1/(s - 1)$",
+      "$1/\\left(s + 1\\right)^{2}$",
+      "$s/(s + 1)$"
     ],
-    "correct": "$\\frac{1}{s + 1}$"
+    "correct": "$1/(s + 1)$"
   },
   {
     "id": "p-bf9626aff72e",
@@ -2915,14 +2915,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\sin(3 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\sin(3 t)\\}(s)=\\frac{3}{s^{2} + 9}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\sin(3 t)\\}(s)=3/(s^{2} + 9)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{3}{s^{2} + 9}$",
-      "$\\frac{s}{s^{2} + 9}$",
-      "$\\frac{1}{s^{2} + 9}$",
-      "$\\frac{3}{s^{2} - 9}$"
+      "$3/(s^{2} + 9)$",
+      "$s/(s^{2} + 9)$",
+      "$1/(s^{2} + 9)$",
+      "$3/(s^{2} - 9)$"
     ],
-    "correct": "$\\frac{3}{s^{2} + 9}$"
+    "correct": "$3/(s^{2} + 9)$"
   },
   {
     "id": "p-c02e18bd6fc3",
@@ -2945,14 +2945,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\operatorname{Log}((1+i)^3)$.",
-    "explanation": "Here $(1+i)^{3}=-2 + 2 i$, with modulus $2 \\sqrt{2}$ and principal argument $\\frac{3 \\pi}{4}$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=\\frac{3 \\ln 2}{2}$, substitution gives $\\operatorname{Log}((1+i)^{3})=\\frac{3 \\ln 2}{2} + \\frac{3 \\pi i}{4}$.",
+    "explanation": "Here $(1+i)^{3}=-2 + 2 i$, with modulus $2 \\sqrt{2}$ and principal argument $3 \\pi/4$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=(3 \\ln 2)/2$, substitution gives $\\operatorname{Log}((1+i)^{3})=(3 \\ln 2)/2 + 3 \\pi i/4$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "3*log(2)/2 + 3*i*pi/4",
-        "latex": "\\frac{3 \\ln 2}{2} + \\frac{3 \\pi i}{4}"
+        "latex": "(3 \\ln 2)/2 + 3 \\pi i/4"
       }
     ]
   },
@@ -2977,14 +2977,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Calculate $\\operatorname{Log}((1+i)^7)$.",
-    "explanation": "Here $(1+i)^{7}=8 - 8 i$, with modulus $8 \\sqrt{2}$ and principal argument $- \\frac{\\pi}{4}$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=\\frac{7 \\ln 2}{2}$, substitution gives $\\operatorname{Log}((1+i)^{7})=\\frac{7 \\ln 2}{2} - \\frac{\\pi i}{4}$.",
+    "explanation": "Here $(1+i)^{7}=8 - 8 i$, with modulus $8 \\sqrt{2}$ and principal argument $- \\pi/4$. Use $\\operatorname{Log}z=\\ln|z|+i\\operatorname{Arg}z$ on $\\mathbb C\\setminus(-\\infty,0]$. Since $\\ln|z|=(7 \\ln 2)/2$, substitution gives $\\operatorname{Log}((1+i)^{7})=(7 \\ln 2)/2 - \\pi i/4$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "7*log(2)/2 - i*pi/4",
-        "latex": "\\frac{7 \\ln 2}{2} - \\frac{\\pi i}{4}"
+        "latex": "(7 \\ln 2)/2 - \\pi i/4"
       }
     ]
   },
@@ -3025,8 +3025,8 @@
     "family": "f-582ae2795ce7",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The inverse Laplace transform of $\\frac{3}{s - 2}$ is",
-    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{\\frac{3}{s - 2}\\}(t)=3 e^{2 t}$.",
+    "prompt": "The inverse Laplace transform of $3/(s - 2)$ is",
+    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{3/(s - 2)\\}(t)=3 e^{2 t}$.",
     "options": [
       "$3 e^{2 t}$",
       "$e^{2 t}$",
@@ -3059,8 +3059,8 @@
     "family": "f-a3877a814340",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The order of the pole of $\\sin z/z^{3}$ at $0$ is",
-    "explanation": "$\\sin z=z-z^3/6+\\cdots$; after division, the leading term is $\\frac{1}{z^{2}}$.",
+    "prompt": "The order of the pole of $\\sin(z)/z^{3}$ at $0$ is",
+    "explanation": "$\\sin(z)=z-z^3/6+\\cdots$; after division, the leading term is $1/z^{2}$.",
     "options": [
       "2",
       "3",
@@ -3094,7 +3094,7 @@
     "options": [
       "$2$",
       "$0$",
-      "$\\frac12$",
+      "$1/2$",
       "$\\ln(2)$",
       "$1$"
     ],
@@ -3106,7 +3106,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $(5s+3)/(s^2+4)$.",
-    "explanation": "Split the fraction into $5\\frac{s}{s^2+4}$ and $\\frac32\\frac{2}{s^2+4}$. The basic transforms are $\\mathcal{L}\\{\\cos(2t)\\}(s)=s/(s^2+4)$ and $\\mathcal{L}\\{\\sin(2t)\\}(s)=2/(s^2+4)$. By linearity, the inverse is $5\\cos(2t)+\\frac32\\sin(2t)$.",
+    "explanation": "Split the fraction into $5s/(s^2+4)$ and $(3/2)\\cdot 2/(s^2+4)$. The basic transforms are $\\mathcal{L}\\{\\cos(2t)\\}(s)=s/(s^2+4)$ and $\\mathcal{L}\\{\\sin(2t)\\}(s)=2/(s^2+4)$. By linearity, the inverse is $5\\cos(2t)+(3/2)\\sin(2t)$.",
     "variables": [
       "t"
     ],
@@ -3115,7 +3115,7 @@
     "answers": [
       {
         "expression": "3*sin(2*t)/2 + 5*cos(2*t)",
-        "latex": "5\\cos(2t)+\\frac32\\sin(2t)"
+        "latex": "5\\cos(2t)+(3/2)\\sin(2t)"
       }
     ]
   },
@@ -3140,14 +3140,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\cos(2 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\cos(2 t)\\}(s)=\\frac{s}{s^{2} + 4}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\cos(2 t)\\}(s)=s/(s^{2} + 4)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{s}{s^{2} + 4}$",
-      "$\\frac{2}{s^{2} + 4}$",
-      "$\\frac{1}{s^{2} + 4}$",
-      "$\\frac{s}{s^{2} - 4}$"
+      "$s/(s^{2} + 4)$",
+      "$2/(s^{2} + 4)$",
+      "$1/(s^{2} + 4)$",
+      "$s/(s^{2} - 4)$"
     ],
-    "correct": "$\\frac{s}{s^{2} + 4}$"
+    "correct": "$s/(s^{2} + 4)$"
   },
   {
     "id": "p-c9f92c072bf5",
@@ -3187,7 +3187,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find $g(t)$ such that $G(t,\\tau)=g(t-\\tau)$ is the Green function of $D^2-4$.",
-    "explanation": "The Green function requires $g''-4g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{2 t}+C_2e^{- 2 t}$. The initial conditions become $C_1+C_2=0$ and $2(C_1-C_2)=1$, so $C_1=\\frac{1}{4}$ and $C_2=- \\frac{1}{4}$. Hence $g(t)=\\frac{e^{2 t}}{4} - \\frac{e^{- 2 t}}{4}=\\frac{\\sinh{\\left(2 t \\right)}}{2}$.",
+    "explanation": "The Green function requires $g''-4g=0$, $g(0)=0$, and $g'(0)=1$. The homogeneous solutions give $g(t)=C_1e^{2 t}+C_2e^{- 2 t}$. The initial conditions become $C_1+C_2=0$ and $2(C_1-C_2)=1$, so $C_1=1/4$ and $C_2=-1/4$. Hence $g(t)=e^{2 t}/4 - e^{- 2 t}/4=\\sinh(2 t)/2$.",
     "variables": [
       "t"
     ],
@@ -3196,7 +3196,7 @@
     "answers": [
       {
         "expression": "sinh(2*t)/2",
-        "latex": "\\frac{\\sinh{\\left(2 t \\right)}}{2}"
+        "latex": "\\sinh(2 t)/2"
       }
     ]
   },
@@ -3206,7 +3206,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $\\frac{2 s + 7}{\\left(s + 3\\right)^{2} + 1}$.",
-    "explanation": "Rewrite the numerator as $2s+7=2(s + 3)+1$. Split the transform into $2\\frac{s + 3}{(s + 3)^2+1}$ and $\\frac{1}{(s + 3)^2+1}$. Use $\\mathcal{L}\\{\\cos(t)\\}(s)=\\frac{s}{s^{2} + 1}$ and $\\mathcal{L}\\{\\sin(t)\\}(s)=\\frac{1}{s^{2} + 1}$. Replacing $s$ by $s + 3$ multiplies each inverse transform by $e^{- 3 t}$ by the shift theorem. Adding the two terms gives $e^{- 3 t}\\left(2\\cos(t)+\\sin(t)\\right)$.",
+    "explanation": "Rewrite the numerator as $2s+7=2(s + 3)+1$. Split the transform into $2\\frac{s + 3}{(s + 3)^2+1}$ and $\\frac{1}{(s + 3)^2+1}$. Use $\\mathcal{L}\\{\\cos(t)\\}(s)=s/(s^{2} + 1)$ and $\\mathcal{L}\\{\\sin(t)\\}(s)=1/(s^{2} + 1)$. Replacing $s$ by $s + 3$ multiplies each inverse transform by $e^{- 3 t}$ by the shift theorem. Adding the two terms gives $e^{- 3 t}\\left(2\\cos(t)+\\sin(t)\\right)$.",
     "variables": [
       "t"
     ],
@@ -3241,7 +3241,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $(2s+5)/(s^2+2s+5)$.",
-    "explanation": "Complete the square: $s^2+2s+5=(s + 1)^2+4$. Rewrite the numerator as $2s+5=2(s + 1)+3$. Split the transform into $2\\frac{s + 1}{(s + 1)^2+4}$ and $\\frac{3}{2}\\frac{2}{(s + 1)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=\\frac{s}{s^{2} + 4}$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=\\frac{2}{s^{2} + 4}$. Replacing $s$ by $s + 1$ multiplies each inverse transform by $e^{- t}$ by the shift theorem. Adding the two terms gives $e^{- t}\\left(2\\cos(2 t)+\\frac{3}{2}\\sin(2 t)\\right)$.",
+    "explanation": "Complete the square: $s^2+2s+5=(s + 1)^2+4$. Rewrite the numerator as $2s+5=2(s + 1)+3$. Split the transform into $2\\frac{s + 1}{(s + 1)^2+4}$ and $(3/2)\\frac{2}{(s + 1)^2+4}$. Use $\\mathcal{L}\\{\\cos(2 t)\\}(s)=s/(s^{2} + 4)$ and $\\mathcal{L}\\{\\sin(2 t)\\}(s)=2/(s^{2} + 4)$. Replacing $s$ by $s + 1$ multiplies each inverse transform by $e^{- t}$ by the shift theorem. Adding the two terms gives $e^{- t}\\left(2\\cos(2 t)+(3/2)\\sin(2 t)\\right)$.",
     "variables": [
       "t"
     ],
@@ -3250,7 +3250,7 @@
     "answers": [
       {
         "expression": "(3*sin(2*t)/2 + 2*cos(2*t))*exp(-t)",
-        "latex": "e^{-t}\\left(2\\cos(2t)+\\frac32\\sin(2t)\\right)"
+        "latex": "e^{-t}\\left(2\\cos(2t)+(3/2)\\sin(2t)\\right)"
       }
     ]
   },
@@ -3259,8 +3259,8 @@
     "family": "f-a3877a814340",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The order of the pole of $\\sin z/z^{5}$ at $0$ is",
-    "explanation": "$\\sin z=z-z^3/6+\\cdots$; after division, the leading term is $\\frac{1}{z^{4}}$.",
+    "prompt": "The order of the pole of $\\sin(z)/z^{5}$ at $0$ is",
+    "explanation": "$\\sin(z)=z-z^3/6+\\cdots$; after division, the leading term is $1/z^{4}$.",
     "options": [
       "4",
       "5",
@@ -3307,14 +3307,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $z=1$ of $e^{3 z}/(z-1)^3$.",
-    "explanation": "Write $g(z)=e^{3 z}$, so $f(z)=g(z)/(z-1)^{3}$. The pole has order 3, and the residue formula gives $\\operatorname{Res}(f,1)=g''(1)/2$. Here $g''(z)=9 e^{3 z}$. Evaluating at $1$ and dividing by $2$ gives $\\frac{9 e^{3}}{2}$.",
+    "explanation": "Write $g(z)=e^{3 z}$, so $f(z)=g(z)/(z-1)^{3}$. The pole has order 3, and the residue formula gives $\\operatorname{Res}(f,1)=g''(1)/2$. Here $g''(z)=9 e^{3 z}$. Evaluating at $1$ and dividing by $2$ gives $9 e^{3}/2$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "9*exp(3)/2",
-        "latex": "\\frac{9 e^{3}}{2}"
+        "latex": "9 e^{3}/2"
       }
     ]
   },
@@ -3324,14 +3324,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $z=1$ of $e^{- z}/(z-1)^2$.",
-    "explanation": "Write $g(z)=e^{- z}$, so $f(z)=g(z)/(z-1)^{2}$. The pole has order 2, and the residue formula gives $\\operatorname{Res}(f,1)=g'(1)$. Here $g'(z)=- e^{- z}$. Evaluating at $1$ gives $- \\frac{1}{e}$.",
+    "explanation": "Write $g(z)=e^{- z}$, so $f(z)=g(z)/(z-1)^{2}$. The pole has order 2, and the residue formula gives $\\operatorname{Res}(f,1)=g'(1)$. Here $g'(z)=- e^{- z}$. Evaluating at $1$ gives $-1/e$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "-exp(-1)",
-        "latex": "- \\frac{1}{e}"
+        "latex": "-1/e"
       }
     ]
   },
@@ -3341,14 +3341,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\sin(2 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\sin(2 t)\\}(s)=\\frac{2}{s^{2} + 4}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\sin(2 t)\\}(s)=2/(s^{2} + 4)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{2}{s^{2} + 4}$",
-      "$\\frac{s}{s^{2} + 4}$",
-      "$\\frac{1}{s^{2} + 4}$",
-      "$\\frac{2}{s^{2} - 4}$"
+      "$2/(s^{2} + 4)$",
+      "$s/(s^{2} + 4)$",
+      "$1/(s^{2} + 4)$",
+      "$2/(s^{2} - 4)$"
     ],
-    "correct": "$\\frac{2}{s^{2} + 4}$"
+    "correct": "$2/(s^{2} + 4)$"
   },
   {
     "id": "p-d688698f2955",
@@ -3356,22 +3356,22 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\cos(3 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\cos(3 t)\\}(s)=\\frac{s}{s^{2} + 9}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\cos(3 t)\\}(s)=s/(s^{2} + 9)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{s}{s^{2} + 9}$",
-      "$\\frac{3}{s^{2} + 9}$",
-      "$\\frac{1}{s^{2} + 9}$",
-      "$\\frac{s}{s^{2} - 9}$"
+      "$s/(s^{2} + 9)$",
+      "$3/(s^{2} + 9)$",
+      "$1/(s^{2} + 9)$",
+      "$s/(s^{2} - 9)$"
     ],
-    "correct": "$\\frac{s}{s^{2} + 9}$"
+    "correct": "$s/(s^{2} + 9)$"
   },
   {
     "id": "p-d8ef2b555009",
     "family": "f-a3877a814340",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The order of the pole of $\\sin z/z^{6}$ at $0$ is",
-    "explanation": "$\\sin z=z-z^3/6+\\cdots$; after division, the leading term is $\\frac{1}{z^{5}}$.",
+    "prompt": "The order of the pole of $\\sin(z)/z^{6}$ at $0$ is",
+    "explanation": "$\\sin(z)=z-z^3/6+\\cdots$; after division, the leading term is $1/z^{5}$.",
     "options": [
       "5",
       "6",
@@ -3386,14 +3386,14 @@
     "kind": "q2",
     "subject": "complex",
     "prompt": "Find the residue at $0$ of $\\bigl(e^{3 z}-1-3 z\\bigr)/z^4$.",
-    "explanation": "The constant and linear terms cancel, leaving $e^{3 z}-1-3 z=\\frac{9 z^{2}}{2}+\\frac{9 z^{3}}{2}+\\cdots$. After division by $z^4$, the first terms are $\\frac{9}{2 z^{2}}+\\frac{9}{2 z}+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $\\frac{9}{2}$.",
+    "explanation": "The constant and linear terms cancel, leaving $e^{3 z}-1-3 z=9 z^{2}/2+9 z^{3}/2+\\cdots$. After division by $z^4$, the first terms are $9/(2 z^{2})+9/(2 z)+\\cdots$. The residue is the coefficient of $z^{-1}$, namely $9/2$.",
     "variables": [],
     "labels": [],
     "unordered": false,
     "answers": [
       {
         "expression": "9/2",
-        "latex": "\\frac{9}{2}"
+        "latex": "9/2"
       }
     ]
   },
@@ -3402,8 +3402,8 @@
     "family": "f-582ae2795ce7",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The inverse Laplace transform of $\\frac{5}{s - 1}$ is",
-    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{\\frac{5}{s - 1}\\}(t)=5 e^{t}$.",
+    "prompt": "The inverse Laplace transform of $5/(s - 1)$ is",
+    "explanation": "By linearity and the exponential transform, $\\mathcal{L}^{-1}\\{5/(s - 1)\\}(t)=5 e^{t}$.",
     "options": [
       "$5 e^{t}$",
       "$e^{t}$",
@@ -3452,7 +3452,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Solve $u'+3u=e^{- t}$, $u(0)=0$.",
-    "explanation": "The integrating factor is $e^{3 t}$. Multiplying gives $(e^{3 t}u)'=e^{2 t}$. Integrating from $0$ to $t$ and using $u(0)=0$ gives $e^{3 t}u(t)=\\frac{e^{2 t}}{2} - \\frac{1}{2}$. Dividing by $e^{3 t}$ yields $u(t)=\\frac{e^{- t}}{2} - \\frac{e^{- 3 t}}{2}$.",
+    "explanation": "The integrating factor is $e^{3 t}$. Multiplying gives $(e^{3 t}u)'=e^{2 t}$. Integrating from $0$ to $t$ and using $u(0)=0$ gives $e^{3 t}u(t)=e^{2 t}/2 - 1/2$. Dividing by $e^{3 t}$ yields $u(t)=e^{- t}/2 - e^{- 3 t}/2$.",
     "variables": [
       "t"
     ],
@@ -3461,7 +3461,7 @@
     "answers": [
       {
         "expression": "exp(-t)/2 - exp(-3*t)/2",
-        "latex": "\\frac{e^{- t}}{2} - \\frac{e^{- 3 t}}{2}"
+        "latex": "e^{- t}/2 - e^{- 3 t}/2"
       }
     ]
   },
@@ -3471,14 +3471,14 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The residue at $0$ of $e^z/z^{4}$ is",
-    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=3$ contributes $\\frac{1}{6}$ to the coefficient of $z^{-1}$ after division.",
+    "explanation": "In $e^z=\\sum_{k=0}^\\infty z^k/k!$, the term with $k=3$ contributes $1/6$ to the coefficient of $z^{-1}$ after division.",
     "options": [
-      "$\\frac{1}{6}$",
-      "$\\frac{1}{24}$",
-      "$- \\frac{1}{6}$",
+      "$1/6$",
+      "$1/24$",
+      "$-1/6$",
       "$0$"
     ],
-    "correct": "$\\frac{1}{6}$"
+    "correct": "$1/6$"
   },
   {
     "id": "p-e1c536b87171",
@@ -3652,24 +3652,24 @@
     "prompt": "The complex conjugate of $1/(1+i)$ is",
     "explanation": "Multiply numerator and denominator by $1-i$ to get $1/(1+i)=(1-i)/2$. Its complex conjugate is $(1+i)/2$.",
     "options": [
-      "$\\dfrac{1+i}{2}$",
-      "$\\dfrac{1-i}{2}$",
+      "$(1+i)/2$",
+      "$(1-i)/2$",
       "$1-i$",
       "$1+i$"
     ],
-    "correct": "$\\dfrac{1+i}{2}$"
+    "correct": "$(1+i)/2$"
   },
   {
     "id": "p-eddb20580187",
     "family": "f-917f7ef1a25f",
     "kind": "q1",
     "subject": "complex",
-    "prompt": "The radius of convergence of the Taylor series about $0$ of $\\frac{1}{z - 3}$ is",
+    "prompt": "The radius of convergence of the Taylor series about $0$ of $1/(z - 3)$ is",
     "explanation": "The only singularity is the pole at $z=3$. The Taylor series about $0$ converges up to the nearest singularity, so $R=|3-0|=3$.",
     "options": [
       "$3$",
       "$4$",
-      "$\\frac{3}{2}$",
+      "$3/2$",
       "$\\infty$"
     ],
     "correct": "$3$"
@@ -3695,14 +3695,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $e^{- 3 t}$ is",
-    "explanation": "$\\mathcal{L}\\{e^{- 3 t}\\}(s)=\\frac{1}{s + 3}$, for $\\operatorname{Re} s>-3$.",
+    "explanation": "$\\mathcal{L}\\{e^{- 3 t}\\}(s)=1/(s + 3)$, for $\\operatorname{Re} s>-3$.",
     "options": [
-      "$\\frac{1}{s + 3}$",
-      "$\\frac{1}{s - 3}$",
-      "$\\frac{1}{\\left(s + 3\\right)^{2}}$",
-      "$\\frac{s}{s + 3}$"
+      "$1/(s + 3)$",
+      "$1/(s - 3)$",
+      "$1/\\left(s + 3\\right)^{2}$",
+      "$s/(s + 3)$"
     ],
-    "correct": "$\\frac{1}{s + 3}$"
+    "correct": "$1/(s + 3)$"
   },
   {
     "id": "p-f22aec722338",
@@ -3739,7 +3739,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\cos(2 t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\cos(2 t)$, the basic transform is $F(s)=\\frac{s}{s^{2} + 4}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 2\\right) \\left(s + 2\\right)}{\\left(s^{2} + 4\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 4}{\\left(s^{2} + 4\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\cos(2 t)$, the basic transform is $F(s)=s/(s^{2} + 4)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{\\left(s - 2\\right) \\left(s + 2\\right)}{\\left(s^{2} + 4\\right)^{2}}$. Changing the sign gives $\\frac{s^{2} - 4}{\\left(s^{2} + 4\\right)^{2}}$.",
     "variables": [
       "s"
     ],
@@ -3793,11 +3793,11 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The absolute value of $2^i$ is",
-    "explanation": "Using the real logarithm of $2$, $2^i=e^{i\\ln2}$ has modulus $1$.",
+    "explanation": "Using the real logarithm of $2$, we have $2^i=e^{i\\ln2}$, which has modulus $1$.",
     "options": [
       "$1$",
       "$0$",
-      "$\\frac12$",
+      "$1/2$",
       "$\\ln(2)$",
       "$2$"
     ],
@@ -3809,7 +3809,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\sin(3 t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\sin(3 t)$, the basic transform is $F(s)=\\frac{3}{s^{2} + 9}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{6 s}{\\left(s^{2} + 9\\right)^{2}}$. Changing the sign gives $\\frac{6 s}{\\left(s^{2} + 9\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\sin(3 t)$, the basic transform is $F(s)=3/(s^{2} + 9)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{6 s}{\\left(s^{2} + 9\\right)^{2}}$. Changing the sign gives $\\frac{6 s}{\\left(s^{2} + 9\\right)^{2}}$.",
     "variables": [
       "s"
     ],
@@ -3828,7 +3828,7 @@
     "kind": "q1",
     "subject": "complex",
     "prompt": "The value of $(1+i)/(1-i)$ is",
-    "explanation": "Multiply numerator and denominator by $1+i$: $(1+i)^2/2=i$.",
+    "explanation": "Multiplying numerator and denominator by $1+i$ gives $(1+i)^2/2=i$.",
     "options": [
       "$i$",
       "$-1$",
@@ -3843,14 +3843,14 @@
     "kind": "q1",
     "subject": "ode",
     "prompt": "The Laplace transform of $\\cos(5 t)$ is",
-    "explanation": "$\\mathcal{L}\\{\\cos(5 t)\\}(s)=\\frac{s}{s^{2} + 25}$, for $\\operatorname{Re} s>0$.",
+    "explanation": "$\\mathcal{L}\\{\\cos(5 t)\\}(s)=s/(s^{2} + 25)$, for $\\operatorname{Re} s>0$.",
     "options": [
-      "$\\frac{s}{s^{2} + 25}$",
-      "$\\frac{5}{s^{2} + 25}$",
-      "$\\frac{1}{s^{2} + 25}$",
-      "$\\frac{s}{s^{2} - 25}$"
+      "$s/(s^{2} + 25)$",
+      "$5/(s^{2} + 25)$",
+      "$1/(s^{2} + 25)$",
+      "$s/(s^{2} - 25)$"
     ],
-    "correct": "$\\frac{s}{s^{2} + 25}$"
+    "correct": "$s/(s^{2} + 25)$"
   },
   {
     "id": "p-fb8619ce37b0",
@@ -3873,7 +3873,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Find the inverse Laplace transform of $\\frac{2 s + 5}{\\left(s + 2\\right)^{2} + 1}$.",
-    "explanation": "Rewrite the numerator as $2s+5=2(s + 2)+1$. Split the transform into $2\\frac{s + 2}{(s + 2)^2+1}$ and $\\frac{1}{(s + 2)^2+1}$. Use $\\mathcal{L}\\{\\cos(t)\\}(s)=\\frac{s}{s^{2} + 1}$ and $\\mathcal{L}\\{\\sin(t)\\}(s)=\\frac{1}{s^{2} + 1}$. Replacing $s$ by $s + 2$ multiplies each inverse transform by $e^{- 2 t}$ by the shift theorem. Adding the two terms gives $e^{- 2 t}\\left(2\\cos(t)+\\sin(t)\\right)$.",
+    "explanation": "Rewrite the numerator as $2s+5=2(s + 2)+1$. Split the transform into $2\\frac{s + 2}{(s + 2)^2+1}$ and $\\frac{1}{(s + 2)^2+1}$. Use $\\mathcal{L}\\{\\cos(t)\\}(s)=s/(s^{2} + 1)$ and $\\mathcal{L}\\{\\sin(t)\\}(s)=1/(s^{2} + 1)$. Replacing $s$ by $s + 2$ multiplies each inverse transform by $e^{- 2 t}$ by the shift theorem. Adding the two terms gives $e^{- 2 t}\\left(2\\cos(t)+\\sin(t)\\right)$.",
     "variables": [
       "t"
     ],
@@ -3928,7 +3928,7 @@
     "kind": "q2",
     "subject": "ode",
     "prompt": "Calculate the Laplace transform of $t\\sin(2 t)$, for $\\operatorname{Re} s>0$.",
-    "explanation": "For $f(t)=\\sin(2 t)$, the basic transform is $F(s)=\\frac{2}{s^{2} + 4}$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{4 s}{\\left(s^{2} + 4\\right)^{2}}$. Changing the sign gives $\\frac{4 s}{\\left(s^{2} + 4\\right)^{2}}$.",
+    "explanation": "For $f(t)=\\sin(2 t)$, the basic transform is $F(s)=2/(s^{2} + 4)$. Differentiating the Laplace transform gives $F'(s)=-\\mathcal{L}\\{tf(t)\\}(s)$. Differentiating, $F'(s)=- \\frac{4 s}{\\left(s^{2} + 4\\right)^{2}}$. Changing the sign gives $\\frac{4 s}{\\left(s^{2} + 4\\right)^{2}}$.",
     "variables": [
       "s"
     ],
