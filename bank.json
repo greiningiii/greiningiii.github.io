@@ -1367,7 +1367,7 @@
     "family": "f-66b344f5093d",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The Wronskian $W(e^{t},e^{- t})$ is",
+    "prompt": "The Wronskian $W(e^{t},e^{- t})(t)$ is",
     "explanation": "Use $W(u,v)=uv'-u' v$. Here $u'=e^{t}$ and $v'=- e^{- t}$. Thus $W=-1\\cdot 1-(1)\\cdot 1=-2$.",
     "options": [
       "$-2$",
@@ -1597,7 +1597,7 @@
     "family": "f-66b344f5093d",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The Wronskian $W(e^{2 t},e^{4 t})$ is",
+    "prompt": "The Wronskian $W(e^{2 t},e^{4 t})(t)$ is",
     "explanation": "Use $W(u,v)=uv'-u' v$. Here $u'=2 e^{2 t}$ and $v'=4 e^{4 t}$. Thus $W=4\\cdot e^{6 t}-(2)\\cdot e^{6 t}=2 e^{6 t}$.",
     "options": [
       "$2 e^{6 t}$",
@@ -1782,7 +1782,7 @@
     "family": "f-66b344f5093d",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The Wronskian $W(1,t^2)$ equals",
+    "prompt": "The Wronskian $W(1,t^2)(t)$ equals",
     "explanation": "$W(1,t^2)=1\\cdot2t-0\\cdot t^2=2t$.",
     "options": [
       "$2t$",
@@ -2644,7 +2644,7 @@
     "family": "f-66b344f5093d",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The Wronskian $W(e^{t},e^{3 t})$ is",
+    "prompt": "The Wronskian $W(e^{t},e^{3 t})(t)$ is",
     "explanation": "Use $W(u,v)=uv'-u' v$. Here $u'=e^{t}$ and $v'=3 e^{3 t}$. Thus $W=3\\cdot e^{4 t}-(1)\\cdot e^{4 t}=2 e^{4 t}$.",
     "options": [
       "$2 e^{4 t}$",
@@ -2961,7 +2961,7 @@
     "family": "f-66b344f5093d",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The Wronskian $W(e^{2 t},e^{- 2 t})$ is",
+    "prompt": "The Wronskian $W(e^{2 t},e^{- 2 t})(t)$ is",
     "explanation": "Use $W(u,v)=uv'-u' v$. Here $u'=2 e^{2 t}$ and $v'=- 2 e^{- 2 t}$. Thus $W=-2\\cdot 1-(2)\\cdot 1=-4$.",
     "options": [
       "$-4$",
@@ -3291,7 +3291,7 @@
     "family": "f-66b344f5093d",
     "kind": "q1",
     "subject": "ode",
-    "prompt": "The Wronskian $W(e^{- t},e^{2 t})$ is",
+    "prompt": "The Wronskian $W(e^{- t},e^{2 t})(t)$ is",
     "explanation": "Use $W(u,v)=uv'-u' v$. Here $u'=- e^{- t}$ and $v'=2 e^{2 t}$. Thus $W=2\\cdot e^{t}-(-1)\\cdot e^{t}=3 e^{t}$.",
     "options": [
       "$3 e^{t}$",
