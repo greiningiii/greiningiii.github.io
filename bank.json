@@ -3164,7 +3164,7 @@
     "translations": {
       "is": {
         "prompt": "Reiknið Laplace-mynd fallsins $tH_a(t)$ fyrir $a=2$.",
-        "explanation": "Skrifum $tH_2(t)=H_2(t)((t-2)+2)$. Með $f(t)=t+2$ verður þetta $H_2(t)f(t-2)$. Þekktar Laplace-myndir gefa $\\mathcal{L}\\{f\\}(s)=1/s^2+2/s$. Beitum nú $\\mathcal{L}\\{H_2(t)f(t-2)\\}(s)=e^{-2s}\\mathcal{L}\\{f\\}(s)$ og fáum $e^{-2s}(1/s^2+2/s)$, fyrir $\\operatorname{Re}s>0$.",
+        "explanation": "Skrifum $tH_2(t)=H_2(t)((t-2)+2)$. Með $f(t)=t+2$ verður þetta $H_2(t)f(t-2)$. Hér má til dæmis nota $\\mathcal{L}\\{f\\}(s)=1/s^2+2/s$. Beitum nú $\\mathcal{L}\\{H_2(t)f(t-2)\\}(s)=e^{-2s}\\mathcal{L}\\{f\\}(s)$. Þar sem Laplace-ummyndunin er línuleg fæst $e^{-2s}(1/s^2+2/s)$, fyrir $\\operatorname{Re}s>0$.",
         "labels": [],
         "answers": [
           {
@@ -4166,7 +4166,7 @@
     "translations": {
       "is": {
         "prompt": "Skrifið niður lausn á afleiðujöfnunni $u''+xu'-2u=0$ ásamt viðbótarskilyrðunum $u(0)=1$ og $u'(0)=0$.",
-        "explanation": "Með innsetningu $u=\\sum_{n=0}^{\\infty}c_nx^n$ fæst $(n+2)(n+1)c_{n+2}=(2-n)c_n$. Upphafsgildin gefa $c_0=1$ og $c_1=0$. Fyrir $n=0$ gefur rakningarformúlan $c_2=1$; fyrir $n=2$ gefur hún $c_4=0$. Allir stuðlar við oddaveldi og allir stuðlar við jöfn veldi hærri en $c_2$ eru núll, svo $u=1+x^2$.",
+        "explanation": "Með innsetningu $u=\\sum_{n=0}^{\\infty}c_nx^n$ fæst $(n+2)(n+1)c_{n+2}=(2-n)c_n$. Upphafsgildin gefa $c_0=1$ og $c_1=0$. Stingum inn $n=0$ og fáum $c_2=1$. Stingum inn $n=2$ og fáum $c_4=0$. Allir stuðlar við oddaveldi og allir stuðlar við jöfn veldi hærri en $c_2$ eru núll, svo $u=1+x^2$, sem má auðveldlega sannreyna með því að stinga inn í afleiðujöfnuna.",
         "labels": [],
         "answers": [
           {
